@@ -1,0 +1,1105 @@
+{
+  "amc_name": "SBI",
+  "status": "processing",
+  "model": "gemini-2.5-flash",
+  "rate_limit": "15 requests/min",
+  "progress": {
+    "current": 21,
+    "total": 47,
+    "percentage": 44.68
+  },
+  "start_time": "2025-10-01T00:28:52.685247",
+  "last_updated": "2025-10-01T00:47:04.101495",
+  "schemes": [
+    {
+      "Scheme_Name": "SBI Flexicap Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Flexicap Fund",
+      "Type_of_Scheme": "(Previously known as SBI Magnum Multicap Fund) Equity - Flexicap Fund",
+      "Date_of_Allotment_(Inception_Date)": "N/A",
+      "AUM_(as_of_Aug_2025)": "N/A",
+      "Fund_Manager_Name": "N/A",
+      "Fund_Manager_Tenure": "N/A",
+      "Fund_Manager_Experience": "N/A",
+      "Benchmark": "N/A",
+      "Options": "N/A",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "N/A",
+        "Beta": "N/A",
+        "Sharpe_Ratio": "N/A"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "N/A",
+        "Total_Turnover": "N/A"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "N/A",
+        "Mid_Cap_(%)": "N/A",
+        "Small_Cap_(%)": "N/A",
+        "Other_Assets_(%)": "N/A"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "N/A",
+        "Regular_IDCW": "N/A",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "N/A",
+        "30_-_90_days": "N/A",
+        "After_90_days": "N/A"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "N/A",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI Focused Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Focused Fund",
+      "Type_of_Scheme": "(Previously known as SBI Focused Equity Fund) Equity - Focused Fund",
+      "Date_of_Allotment_(Inception_Date)": "N/A",
+      "AUM_(as_of_Aug_2025)": "N/A",
+      "Fund_Manager_Name": "N/A",
+      "Fund_Manager_Tenure": "N/A",
+      "Fund_Manager_Experience": "N/A",
+      "Benchmark": "N/A",
+      "Options": "N/A",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "N/A",
+        "Beta": "N/A",
+        "Sharpe_Ratio": "N/A"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "N/A",
+        "Total_Turnover": "N/A"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "N/A",
+        "Mid_Cap_(%)": "N/A",
+        "Small_Cap_(%)": "N/A",
+        "Other_Assets_(%)": "N/A"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "N/A",
+        "Regular_IDCW": "N/A",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "N/A",
+        "30_-_90_days": "N/A",
+        "After_90_days": "N/A"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "N/A",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI Healthcare Opportunities Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Sectoral Fund",
+      "Type_of_Scheme": "Equity - Sectoral Fund",
+      "Date_of_Allotment_(Inception_Date)": "N/A",
+      "AUM_(as_of_Aug_2025)": "N/A",
+      "Fund_Manager_Name": "N/A",
+      "Fund_Manager_Tenure": "N/A",
+      "Fund_Manager_Experience": "N/A",
+      "Benchmark": "N/A",
+      "Options": "N/A",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "N/A",
+        "Beta": "N/A",
+        "Sharpe_Ratio": "N/A"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "N/A",
+        "Total_Turnover": "N/A"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "N/A",
+        "Mid_Cap_(%)": "N/A",
+        "Small_Cap_(%)": "N/A",
+        "Other_Assets_(%)": "N/A"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "N/A",
+        "Regular_IDCW": "N/A",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "N/A",
+        "30_-_90_days": "N/A",
+        "After_90_days": "N/A"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "N/A",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI Technology Opportunities Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Sectoral Fund",
+      "Type_of_Scheme": "Equity - Sectoral Fund",
+      "Date_of_Allotment_(Inception_Date)": "N/A",
+      "AUM_(as_of_Aug_2025)": "N/A",
+      "Fund_Manager_Name": "N/A",
+      "Fund_Manager_Tenure": "N/A",
+      "Fund_Manager_Experience": "N/A",
+      "Benchmark": "N/A",
+      "Options": "N/A",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "N/A",
+        "Beta": "N/A",
+        "Sharpe_Ratio": "N/A"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "N/A",
+        "Total_Turnover": "N/A"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "N/A",
+        "Mid_Cap_(%)": "N/A",
+        "Small_Cap_(%)": "N/A",
+        "Other_Assets_(%)": "N/A"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "N/A",
+        "Regular_IDCW": "N/A",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "N/A",
+        "30_-_90_days": "N/A",
+        "After_90_days": "N/A"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "N/A",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI Multi Asset Allocation Fund",
+      "Asset_Class": "Hybrid",
+      "Sub_Class": "Multi Asset Allocation Fund",
+      "Type_of_Scheme": "(Previously known as SBI Magnum Monthly Income Plan - Floater) Hybrid - Multi Asset Allocation Fund",
+      "Date_of_Allotment_(Inception_Date)": "N/A",
+      "AUM_(as_of_Aug_2025)": "N/A",
+      "Fund_Manager_Name": "N/A",
+      "Fund_Manager_Tenure": "N/A",
+      "Fund_Manager_Experience": "N/A",
+      "Benchmark": "N/A",
+      "Options": "N/A",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "N/A",
+        "Beta": "N/A",
+        "Sharpe_Ratio": "N/A"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "N/A",
+        "Total_Turnover": "N/A"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "N/A",
+        "Mid_Cap_(%)": "N/A",
+        "Small_Cap_(%)": "N/A",
+        "Other_Assets_(%)": "N/A"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "N/A",
+        "Regular_IDCW": "N/A",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "N/A",
+        "30_-_90_days": "N/A",
+        "After_90_days": "N/A"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "N/A",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": {
+        "Yield_to_Maturity": "N/A",
+        "Modified_Duration": "N/A",
+        "Average_Maturity_Years": "N/A",
+        "Macaulay_Duration": "N/A",
+        "Composition_by_rating": "N/A"
+      }
+    },
+    {
+      "Scheme_Name": "SBI Magnum Gilt Fund",
+      "Asset_Class": "Debt",
+      "Sub_Class": "Gilt Fund",
+      "Type_of_Scheme": "(Previously known as SBI Magnum Gilt Fund - Long Term Plan) Debt - Gilt Fund",
+      "Date_of_Allotment_(Inception_Date)": "N/A",
+      "AUM_(as_of_Aug_2025)": "N/A",
+      "Fund_Manager_Name": "N/A",
+      "Fund_Manager_Tenure": "N/A",
+      "Fund_Manager_Experience": "N/A",
+      "Benchmark": "N/A",
+      "Options": "N/A",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "N/A",
+        "Beta": "N/A",
+        "Sharpe_Ratio": "N/A"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "N/A",
+        "Total_Turnover": "N/A"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "N/A",
+        "Mid_Cap_(%)": "N/A",
+        "Small_Cap_(%)": "N/A",
+        "Other_Assets_(%)": "N/A"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "N/A",
+        "Regular_IDCW": "N/A",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "N/A",
+        "30_-_90_days": "N/A",
+        "After_90_days": "N/A"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "N/A",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": {
+        "Yield_to_Maturity": "N/A",
+        "Modified_Duration": "N/A",
+        "Average_Maturity_Years": "N/A",
+        "Macaulay_Duration": "N/A",
+        "Composition_by_rating": "N/A"
+      }
+    },
+    {
+      "Scheme_Name": "SBI Magnum Ultra Short Duration Fund",
+      "Asset_Class": "Debt",
+      "Sub_Class": "Ultra Short Duration Fund",
+      "Type_of_Scheme": "(Previously known as SBI Magnum InstaCash Fund) Debt - Ultra Short Duration Fund",
+      "Date_of_Allotment_(Inception_Date)": "N/A",
+      "AUM_(as_of_Aug_2025)": "N/A",
+      "Fund_Manager_Name": "N/A",
+      "Fund_Manager_Tenure": "N/A",
+      "Fund_Manager_Experience": "N/A",
+      "Benchmark": "N/A",
+      "Options": "N/A",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "N/A",
+        "Beta": "N/A",
+        "Sharpe_Ratio": "N/A"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "N/A",
+        "Total_Turnover": "N/A"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "N/A",
+        "Mid_Cap_(%)": "N/A",
+        "Small_Cap_(%)": "N/A",
+        "Other_Assets_(%)": "N/A"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "N/A",
+        "Regular_IDCW": "N/A",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "N/A",
+        "30_-_90_days": "N/A",
+        "After_90_days": "N/A"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "N/A",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": {
+        "Yield_to_Maturity": "N/A",
+        "Modified_Duration": "N/A",
+        "Average_Maturity_Years": "N/A",
+        "Macaulay_Duration": "N/A",
+        "Composition_by_rating": "N/A"
+      }
+    },
+    {
+      "Scheme_Name": "SBI BlueChip Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Large Cap",
+      "Type_of_Scheme": "An open-ended Equity Scheme predominantly investing in large cap stocks.",
+      "Date_of_Allotment_(Inception_Date)": "14/02/2006",
+      "AUM_(as_of_Aug_2025)": "₹52,420.39 Crs",
+      "Fund_Manager_Name": "Mr. Saurabh Pant",
+      "Fund_Manager_Tenure": "Since Apr 2024",
+      "Fund_Manager_Experience": "18 years",
+      "Benchmark": "BSE 100 (TRI)",
+      "Options": "Regular (IDCW, Growth)",
+      "Expense_Ratio": {
+        "Direct": "0.81%",
+        "Regular": "1.49%"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "11.69%",
+        "Beta": "0.91",
+        "Sharpe_Ratio": "0.64"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.25",
+        "Total_Turnover": "0.58"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "97.92",
+        "Mid_Cap_(%)": "N/A",
+        "Small_Cap_(%)": "N/A",
+        "Other_Assets_(%)": "2.08"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "₹90.7215",
+        "Regular_IDCW": "₹51.6100",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "0.25% of the units",
+        "30_-_90_days": "0.10% of the units",
+        "After_90_days": "NIL"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI Large cap Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Large Cap",
+      "Type_of_Scheme": "An open-ended Equity Scheme investing in companies following the ESG theme with exclusionary strategy.",
+      "Date_of_Allotment_(Inception_Date)": "01/01/1991",
+      "AUM_(as_of_Aug_2025)": "₹5,604.75 Crs",
+      "Fund_Manager_Name": "Mr. Rohit Shimpi",
+      "Fund_Manager_Tenure": "Since Jan 2022",
+      "Fund_Manager_Experience": "Over 19 years",
+      "Benchmark": "Nifty 100 ESG TRI",
+      "Options": "Regular (IDCW, Growth)",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "11.91%",
+        "Beta": "0.88",
+        "Sharpe_Ratio": "0.56"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.14",
+        "Total_Turnover": "N/A"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "80.73",
+        "Mid_Cap_(%)": "12.56",
+        "Small_Cap_(%)": "4.36",
+        "Other_Assets_(%)": "2.35"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "₹234.6462",
+        "Regular_IDCW": "₹73.3844",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "1% of the units",
+        "30_-_90_days": "1% of the units",
+        "After_90_days": "1% of the units"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI ESG Exclusionary Strategy Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Dynamic Equity (Flexicap)",
+      "Type_of_Scheme": "An open-ended Dynamic Equity Scheme investing across large cap, mid cap, small cap stocks.",
+      "Date_of_Allotment_(Inception_Date)": "29/09/2005",
+      "AUM_(as_of_Aug_2025)": "₹22,010.80 Crs",
+      "Fund_Manager_Name": "Mr. Dinesh Balachandran, Mr. Anup Upadhyay",
+      "Fund_Manager_Tenure": "Since Dec 2024",
+      "Fund_Manager_Experience": "Over 24 years, Over 18 years",
+      "Benchmark": "BSE 500 (TRI)",
+      "Options": "Regular (Growth, IDCW)",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "11.43%",
+        "Beta": "0.83",
+        "Sharpe_Ratio": "0.55"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.67",
+        "Total_Turnover": "0.86"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "67.32%",
+        "Mid_Cap_(%)": "12.55%",
+        "Small_Cap_(%)": "12.94%",
+        "Other_Assets_(%)": "6.15%"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "N/A",
+        "Regular_IDCW": "N/A",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "0.10% of the units",
+        "30_-_90_days": "NIL",
+        "After_90_days": "NIL"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI MultiCap Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Multi-Cap",
+      "Type_of_Scheme": "An open ended equity scheme investing predominantly in dividend yielding stocks.",
+      "Date_of_Allotment_(Inception_Date)": "14/03/2023",
+      "AUM_(as_of_Aug_2025)": "₹8,954.04 Crs",
+      "Fund_Manager_Name": "Mr. Rohit Shimpi",
+      "Fund_Manager_Tenure": "Since Mar 2023",
+      "Fund_Manager_Experience": "Over 19 years",
+      "Benchmark": "NIFTY 500 TRI",
+      "Options": "Regular (IDCW, Growth)",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "N/A",
+        "Beta": "0.78",
+        "Sharpe_Ratio": "0.84"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.34",
+        "Total_Turnover": "0.62"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "70.36",
+        "Mid_Cap_(%)": "13.47",
+        "Small_Cap_(%)": "7.12",
+        "Other_Assets_(%)": "9.05"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "₹14.7579",
+        "Regular_IDCW": "₹14.7577",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "1.00% of the units",
+        "30_-_90_days": "NIL",
+        "After_90_days": "NIL"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI Dividend Yield Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Dividend Yield / Contrarian",
+      "Type_of_Scheme": "An open-ended Equity Scheme following contrarian investment strategy.",
+      "Date_of_Allotment_(Inception_Date)": "05/07/1999",
+      "AUM_(as_of_Aug_2025)": "₹46,655.07 Crs",
+      "Fund_Manager_Name": "Mr. Dinesh Balachandran",
+      "Fund_Manager_Tenure": "Since May 2018",
+      "Fund_Manager_Experience": "Over 24 Years",
+      "Benchmark": "BSE 500 TRI",
+      "Options": "Growth, IDCW",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "12.25%",
+        "Beta": "0.88",
+        "Sharpe_Ratio": "1.08"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.15",
+        "Total_Turnover": "2.27"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "50.11",
+        "Mid_Cap_(%)": "11.35",
+        "Small_Cap_(%)": "14.42",
+        "Other_Assets_(%)": "19.32"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "₹373.0176",
+        "Regular_IDCW": "₹64.6832",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "0.25% of the units",
+        "30_-_90_days": "0.10%",
+        "After_90_days": "NIL"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI Contra Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Large & Mid Cap",
+      "Type_of_Scheme": "An open-ended Equity Scheme investing in both large cap and mid cap stocks.",
+      "Date_of_Allotment_(Inception_Date)": "28/02/1993",
+      "AUM_(as_of_Aug_2025)": "₹33,248.33 Crs",
+      "Fund_Manager_Name": "Mr. Saurabh Pant",
+      "Fund_Manager_Tenure": "Since Sep 2016",
+      "Fund_Manager_Experience": "Over 18 years",
+      "Benchmark": "NIFTY LargeMidCap 250 Index (TRI)",
+      "Options": "Regular (IDCW, Growth)",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "11.31%",
+        "Beta": "0.79",
+        "Sharpe_Ratio": "0.93"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.26",
+        "Total_Turnover": "0.58"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "42.23",
+        "Mid_Cap_(%)": "36.20",
+        "Small_Cap_(%)": "15.11",
+        "Other_Assets_(%)": "6.07"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "₹609.5408",
+        "Regular_IDCW": "₹275.3824",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "0.10% of the units",
+        "30_-_90_days": "NIL",
+        "After_90_days": "NIL"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI Large & Midcap Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Large & Midcap",
+      "Type_of_Scheme": "An open-ended Equity Scheme investing in maximum 30 stocks across multicap space.",
+      "Date_of_Allotment_(Inception_Date)": "17/09/2004",
+      "AUM_(as_of_Aug_2025)": "₹37,764.02 Crs",
+      "Fund_Manager_Name": "Mr. R. Srinivasan",
+      "Fund_Manager_Tenure": "Since May 2009",
+      "Fund_Manager_Experience": "Over 33 years",
+      "Benchmark": "BSE 500 (TRI)",
+      "Options": "Regular (Growth, IDCW), Direct (Growth, IDCW)",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "10.53%",
+        "Beta": "0.69",
+        "Sharpe_Ratio": "0.80"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.36",
+        "Total_Turnover": "0.38"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "55.30%",
+        "Mid_Cap_(%)": "22.83%",
+        "Small_Cap_(%)": "7.57%",
+        "Other_Assets_(%)": "14.30%"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "₹345.8413",
+        "Regular_IDCW": "₹63.2574",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "0.25% of the units",
+        "30_-_90_days": "0.10%",
+        "After_90_days": "NIL"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI Magnum Global Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Thematic (MNC Theme)",
+      "Type_of_Scheme": "An open-ended Equity Scheme investing in companies following the MNC theme.",
+      "Date_of_Allotment_(Inception_Date)": "30/09/1994",
+      "AUM_(as_of_Aug_2025)": "₹6,000.36 Crs",
+      "Fund_Manager_Name": "Mr. Tanmaya Desai",
+      "Fund_Manager_Tenure": "Since April 2024",
+      "Fund_Manager_Experience": "Over 17 years",
+      "Benchmark": "Nifty MNC Index (TRI)",
+      "Options": "Regular (IDCW, Growth), Direct (IDCW, Growth)",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "10.24%",
+        "Beta": "0.57",
+        "Sharpe_Ratio": "0.16"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.60",
+        "Total_Turnover": "0.63"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "34.16",
+        "Mid_Cap_(%)": "36.38",
+        "Small_Cap_(%)": "26.28",
+        "Other_Assets_(%)": "2.85"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "₹352.1615",
+        "Regular_IDCW": "₹107.5826",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "1.00% of the units",
+        "30_-_90_days": "NIL",
+        "After_90_days": "NIL"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "EQUITY-SMALL CAP FUND",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Small Cap",
+      "Type_of_Scheme": "An open-ended Equity Scheme predominantly investing in small cap stocks.",
+      "Date_of_Allotment_(Inception_Date)": "09/09/2009",
+      "AUM_(as_of_Aug_2025)": "₹35,245.02 Crs",
+      "Fund_Manager_Name": "Mr. R. Srinivasan",
+      "Fund_Manager_Tenure": "Since Nov 2013",
+      "Fund_Manager_Experience": "Over 33 years",
+      "Benchmark": "BSE 250 Small Cap Index TRI",
+      "Options": "Regular (IDCW, Growth)",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "14.07%",
+        "Beta": "0.72",
+        "Sharpe_Ratio": "0.66"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.91",
+        "Total_Turnover": "0.96"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "N/A",
+        "Mid_Cap_(%)": "5.84",
+        "Small_Cap_(%)": "77.90",
+        "Other_Assets_(%)": "16.26"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "₹169.1425",
+        "Regular_IDCW": "₹99.9266",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "1% of the units",
+        "30_-_90_days": "1% of the units",
+        "After_90_days": "N/A"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "N/A",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI Small Cap Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Small Cap",
+      "Type_of_Scheme": "An open-ended Equity Linked Saving Scheme with a statutory lock-in period of 3 years and tax benefit",
+      "Date_of_Allotment_(Inception_Date)": "31/03/1993",
+      "AUM_(as_of_Aug_2025)": "₹29,937.60 Crs",
+      "Fund_Manager_Name": "Mr. Dinesh Balachandran",
+      "Fund_Manager_Tenure": "Since Sep 2016",
+      "Fund_Manager_Experience": "Over 24 years",
+      "Benchmark": "BSE 500 (TRI)",
+      "Options": "Regular (IDCW, Growth)",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "13.47%",
+        "Beta": "0.96",
+        "Sharpe_Ratio": "1.18"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.16",
+        "Total_Turnover": "0.16"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "21.85",
+        "Mid_Cap_(%)": "12.99",
+        "Small_Cap_(%)": "59.37",
+        "Other_Assets_(%)": "5.66"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "N/A",
+        "Regular_IDCW": "N/A",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "NIL",
+        "30_-_90_days": "NIL",
+        "After_90_days": "NIL"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI ELSS Tax Saver Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Sectoral Fund (Healthcare)",
+      "Type_of_Scheme": "An open-ended Equity Scheme investing in healthcare sector.",
+      "Date_of_Allotment_(Inception_Date)": "05/07/1999",
+      "AUM_(as_of_Aug_2025)": "₹3,963.42 Crs",
+      "Fund_Manager_Name": "Mr. Tanmaya Desai",
+      "Fund_Manager_Tenure": "Since Jun 2011",
+      "Fund_Manager_Experience": "Over 17 years",
+      "Benchmark": "BSE HEALTHCARE (TRI)",
+      "Options": "Regular (IDCW, Growth)",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "13.91%",
+        "Beta": "0.84",
+        "Sharpe_Ratio": "1.35"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.14",
+        "Total_Turnover": "0.14"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "39.70",
+        "Mid_Cap_(%)": "33.12",
+        "Small_Cap_(%)": "19.13",
+        "Other_Assets_(%)": "7.98"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "₹427.4404",
+        "Regular_IDCW": "₹269.2650",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "0.50% of the units",
+        "30_-_90_days": "NIL",
+        "After_90_days": "NIL"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI Banking & Financial Services Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "PSU/PSU subsidiaries sector",
+      "Type_of_Scheme": "An open-ended Equity Scheme investing in PSU/PSU subsidiaries sector.",
+      "Date_of_Allotment_(Inception_Date)": "07/07/2010",
+      "AUM_(as_of_Aug_2025)": "₹5,179.36 Crs",
+      "Fund_Manager_Name": "Mr. Rohit Shimpi",
+      "Fund_Manager_Tenure": "Since June 2024",
+      "Fund_Manager_Experience": "Over 19 years",
+      "Benchmark": "BSE PSU (TRI)",
+      "Options": "Regular (Growth, IDCW)",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "22.16%",
+        "Beta": "0.95",
+        "Sharpe_Ratio": "0.99"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.09",
+        "Total_Turnover": "N/A"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "70.28%",
+        "Mid_Cap_(%)": "23.25%",
+        "Small_Cap_(%)": "2.71%",
+        "Other_Assets_(%)": "3.66%"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "₹30.3068",
+        "Regular_IDCW": "₹30.3033",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "0.50% of the units",
+        "30_-_90_days": "NIL",
+        "After_90_days": "NIL"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI PSU Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Sectoral Fund (Commodity and Commodity Related Businesses)",
+      "Type_of_Scheme": "An open-ended Equity Scheme investing in commodity and commodity related sectors.",
+      "Date_of_Allotment_(Inception_Date)": "08/08/2005",
+      "AUM_(as_of_Aug_2025)": "₹702.47 Crs",
+      "Fund_Manager_Name": "Mr. Dinesh Balachandran",
+      "Fund_Manager_Tenure": "Since Jun 2024",
+      "Fund_Manager_Experience": "Over 24 years",
+      "Benchmark": "Nifty Commodities Index (TRI)",
+      "Options": "Regular (IDCW, Growth)",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "15.20%",
+        "Beta": "0.78",
+        "Sharpe_Ratio": "0.58"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.23",
+        "Total_Turnover": "0.23"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "50.78",
+        "Mid_Cap_(%)": "16.17",
+        "Small_Cap_(%)": "31.62",
+        "Other_Assets_(%)": "1.43"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "N/A",
+        "Regular_IDCW": "N/A",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "0.50% of the units",
+        "30_-_90_days": "NIL",
+        "After_90_days": "NIL"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI Comma Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Sectoral Fund (Infrastructure)",
+      "Type_of_Scheme": "An open-ended Equity Scheme investing in infrastructure and allied sectors.",
+      "Date_of_Allotment_(Inception_Date)": "06/07/2007",
+      "AUM_(as_of_Aug_2025)": "₹4,835.91 Crs",
+      "Fund_Manager_Name": "Mr. Bhavin Vithlani",
+      "Fund_Manager_Tenure": "Since Jan 2022",
+      "Fund_Manager_Experience": "Over 22 years",
+      "Benchmark": "Nifty Infrastructure Index (TRI)",
+      "Options": "Regular (IDCW, Growth)",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "15.10%",
+        "Beta": "0.85",
+        "Sharpe_Ratio": "0.97"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.37",
+        "Total_Turnover": "0.37"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "54.15",
+        "Mid_Cap_(%)": "30.49",
+        "Small_Cap_(%)": "12.63",
+        "Other_Assets_(%)": "1.60"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "N/A",
+        "Regular_IDCW": "N/A",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "0.50% of the units",
+        "30_-_90_days": "NIL",
+        "After_90_days": "NIL"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    }
+  ],
+  "errors": []
+}

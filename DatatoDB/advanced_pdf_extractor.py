@@ -39,7 +39,6 @@ class AdvancedPDFExtractor:
                 'file_path': pdf_path,
                 'extraction_method': 'advanced',
                 'pages': {},
-                'schemes': [],
                 'full_text': '',
                 'tables': [],
                 'metadata': {}
@@ -55,14 +54,10 @@ class AdvancedPDFExtractor:
             extracted_data.update(pdfplumber_data)
             extracted_data['pypdf2_text'] = pypdf2_text
             
-            # Detect scheme boundaries
-            schemes = self._detect_scheme_boundaries(extracted_data)
-            extracted_data['schemes'] = schemes
-            
             # Store in cache
             self.extracted_texts[pdf_path] = extracted_data
             
-            logger.info(f"Successfully extracted {len(schemes)} schemes from {pdf_path}")
+            logger.info(f"Successfully extracted text from {pdf_path} ({len(extracted_data['pages'])} pages)")
             return extracted_data
             
         except Exception as e:
@@ -70,7 +65,6 @@ class AdvancedPDFExtractor:
             return {
                 'file_name': Path(pdf_path).name,
                 'error': str(e),
-                'schemes': [],
                 'pages': {},
                 'full_text': ''
             }

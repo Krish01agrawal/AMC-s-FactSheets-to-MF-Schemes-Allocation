@@ -7,7 +7,7 @@ from typing import Dict, List, Any, Optional
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
-from mongodb_interface import MongoDBInterface
+from advanced_mongodb_interface import AdvancedMongoDBInterface
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -16,8 +16,8 @@ logger = logging.getLogger(__name__)
 class FactsheetAnalysisEngine:
     """Advanced analysis engine for factsheet data"""
     
-    def __init__(self, db_interface: MongoDBInterface = None):
-        self.db_interface = db_interface or MongoDBInterface()
+    def __init__(self, db_interface: AdvancedMongoDBInterface = None):
+        self.db_interface = db_interface or AdvancedMongoDBInterface()
     
     def get_comprehensive_analysis(self) -> Dict[str, Any]:
         """Get comprehensive analysis of all factsheet data"""
