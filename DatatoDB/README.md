@@ -1,14 +1,16 @@
-# PlutoMoney Factsheet Extraction System
+# PlutoMoney Scalable Factsheet Extraction System
 
-A clean, production-ready system for extracting structured financial data from mutual fund factsheets using Smart Hybrid Extraction (Gemini AI + Regex).
+A dynamic, robust, and resumable system for extracting structured financial data from mutual fund factsheets across 44+ AMCs using advanced AI-powered extraction.
 
 ## 🎯 Features
 
-- **Smart Hybrid Extraction**: Combines Gemini AI for complex data and regex for simple fields
+- **44+ AMC Support**: Automatic detection and processing for all major AMCs
+- **Resume Capability**: Skip already processed files, resume from where you left off
+- **Zero Redundancy**: Intelligent deduplication prevents duplicate data storage
 - **High Accuracy**: Extracts 30+ data points per scheme with 95%+ accuracy
 - **Cost Effective**: Uses Gemini 2.5 Flash for optimal cost-performance ratio
-- **Scalable**: Processes multiple factsheets with deduplication
 - **Production Ready**: Clean codebase with proper error handling and logging
+- **Future Proof**: Just drop new PDFs in `factsheets/` folder and run
 
 ## 📊 Extracted Data Points
 
@@ -56,38 +58,40 @@ python3 setup_gemini.py
 Get your free API key from: https://makersuite.google.com/app/apikey
 
 ### 3. Add Factsheets
-Place your PDF factsheets in the `factsheets/` directory:
+Just drop your PDF factsheets in the `factsheets/` directory:
 ```
 factsheets/
 ├── HDFC_MF_Factsheet.pdf
 ├── SBI_MF_Factsheet.pdf
-└── ...
+├── ICICI_MF_Factsheet.pdf
+├── Axis_MF_Factsheet.pdf
+└── ... (any AMC factsheet)
 ```
 
-### 4. Run Extraction
+### 4. Run Scalable Extraction
 ```bash
-# Main processing (recommended)
+# Main scalable processing (recommended)
 python3 main.py
 
-# Test extraction only
-python3 test_smart_hybrid.py
+# Test scalable system
+python3 test_scalable_extractor.py
 
-# Optimized extraction with rate limiting
-python3 optimized_gemini_extractor.py
+# Direct scalable extraction
+python3 scalable_amc_extractor.py
 ```
 
 ### 5. View Results
 Check the `output/` directory for:
-- `factsheet_extraction_YYYYMMDD_HHMMSS.json` - Extracted data
-- `analysis_report_YYYYMMDD_HHMMSS.json` - Analysis insights
+- `scalable_extraction_YYYYMMDD_HHMMSS.json` - Extracted data by AMC
+- `scalable_analysis_report_YYYYMMDD_HHMMSS.json` - Analysis insights
+- `processing_state.json` - Resume state (don't delete this!)
 
 ## 🏗️ System Architecture
 
 ```
 DatatoDB/
-├── main.py                    # Main entry point
-├── smart_hybrid_extractor.py  # Core extraction logic
-├── optimized_gemini_extractor.py # Optimized Gemini extraction with rate limiting
+├── main.py                    # Main entry point (scalable)
+├── scalable_amc_extractor.py  # Core scalable extraction for 44+ AMCs
 ├── gemini_data_extractor.py   # Gemini AI integration
 ├── advanced_pdf_extractor.py  # PDF text extraction
 ├── advanced_mongodb_interface.py # Database operations
@@ -95,16 +99,17 @@ DatatoDB/
 ├── config.py                  # Configuration
 ├── requirements.txt           # Dependencies
 ├── setup_gemini.py           # API key setup
-├── test_smart_hybrid.py      # Test script
-├── factsheets/               # Input PDFs
-└── output/                   # Generated files
+├── test_scalable_extractor.py # Test script
+├── factsheets/               # Input PDFs (drop any AMC factsheet here)
+└── output/                   # Generated files + processing state
 ```
 
 ## 💰 Cost Information
 
 - **Gemini 2.5 Flash**: ~$0.0001 per 1K input tokens
 - **Typical Cost**: ~$0.001-0.01 per scheme
-- **For 244 schemes**: ~$0.25-2.50 total
+- **For 1000+ schemes across 44+ AMCs**: ~$1-10 total
+- **Resume capability**: No duplicate processing costs
 - **Much cheaper than OpenAI GPT-4**
 
 ## 🔧 Configuration
@@ -157,9 +162,9 @@ analysis = engine.get_comprehensive_analysis()
 
 ## 🧪 Testing
 
-### Test Smart Hybrid Extraction
+### Test Scalable System
 ```bash
-python3 test_smart_hybrid.py
+python3 test_scalable_extractor.py
 ```
 
 ### Test Optimized Gemini Extraction
@@ -174,10 +179,10 @@ from advanced_pdf_extractor import AdvancedPDFExtractor
 extractor = AdvancedPDFExtractor()
 data = extractor.extract_text_from_pdf("factsheet.pdf")
 
-# Test Gemini extraction
-from gemini_data_extractor import GeminiDataExtractor
-extractor = GeminiDataExtractor()
-result = extractor.extract_data_with_gemini(text, "Scheme Name", "AMC")
+# Test scalable extraction
+from scalable_amc_extractor import ScalableAMCExtractor
+extractor = ScalableAMCExtractor()
+results = extractor.process_all_factsheets()
 ```
 
 ## 📊 Output Format

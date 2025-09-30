@@ -18,3 +18,13 @@ python3 demo_analysis.py
 # Check output/ directory for:
 # - factsheet_extraction_*.json (extracted data)
 # - analysis_report_*.json (analysis insights)
+
+
+
+
+
+# Main scalable processing
+python3 main.py
+
+# Direct scalable extraction
+python3 scalable_amc_extractor.py

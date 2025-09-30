@@ -1,6 +1,6 @@
 """
 Main Pipeline for PlutoMoney Factsheet Extraction System
-Clean, production-ready system using Smart Hybrid Extraction (Gemini + Regex)
+Scalable system for 44+ AMCs with automatic detection and resume capability
 """
 
 import os
@@ -10,7 +10,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Any
 
-from smart_hybrid_extractor import SmartHybridExtractor
+from scalable_amc_extractor import ScalableAMCExtractor
 from advanced_mongodb_interface import AdvancedMongoDBInterface
 from analysis_engine import FactsheetAnalysisEngine
 import config
@@ -27,11 +27,11 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class PlutoMoneyFactsheetProcessor:
-    """Main processor for factsheet extraction and analysis"""
+    """Scalable processor for factsheet extraction and analysis across 44+ AMCs"""
     
     def __init__(self):
-        """Initialize the processor"""
-        self.extractor = SmartHybridExtractor()
+        """Initialize the scalable processor"""
+        self.extractor = ScalableAMCExtractor()
         self.db_interface = None
         self.analysis_engine = None
         
@@ -39,11 +39,13 @@ class PlutoMoneyFactsheetProcessor:
         self.stats = {
             'total_files': 0,
             'processed_files': 0,
+            'skipped_files': 0,
             'failed_files': 0,
             'total_schemes': 0,
             'new_schemes': 0,
             'existing_schemes': 0,
             'processing_time': 0,
+            'amcs_processed': 0,
             'errors': []
         }
     
@@ -59,8 +61,8 @@ class PlutoMoneyFactsheetProcessor:
             return False
     
     def process_factsheets(self, save_to_db: bool = True, save_to_json: bool = True) -> Dict[str, Any]:
-        """Process all factsheets in the factsheets directory"""
-        logger.info("🚀 Starting factsheet processing...")
+        """Process all factsheets with scalable AMC detection and resume capability"""
+        logger.info("🚀 Starting scalable factsheet processing...")
         
         start_time = datetime.now()
         
@@ -76,31 +78,25 @@ class PlutoMoneyFactsheetProcessor:
             return {}
         
         self.stats['total_files'] = len(pdf_files)
-        logger.info(f"📁 Found {len(pdf_files)} PDF files to process")
+        logger.info(f"📁 Found {len(pdf_files)} PDF files")
         
-        # Process each factsheet
+        # Process using scalable extractor
+        all_schemes_by_amc = self.extractor.process_all_factsheets("factsheets")
+        
+        if not all_schemes_by_amc:
+            logger.info("ℹ️ No new files to process (all already processed)")
+            return {}
+        
+        # Flatten all schemes
         all_schemes = []
+        for amc_schemes in all_schemes_by_amc.values():
+            all_schemes.extend(amc_schemes)
         
-        for pdf_file in pdf_files:
-            try:
-                logger.info(f"📄 Processing: {pdf_file.name}")
-                
-                # Extract schemes using smart hybrid approach
-                schemes = self.extractor.process_factsheet(str(pdf_file))
-                
-                if schemes:
-                    all_schemes.extend(schemes)
-                    self.stats['processed_files'] += 1
-                    self.stats['total_schemes'] += len(schemes)
-                    logger.info(f"✅ Extracted {len(schemes)} schemes from {pdf_file.name}")
-                else:
-                    self.stats['failed_files'] += 1
-                    logger.warning(f"⚠️ No schemes extracted from {pdf_file.name}")
-                
-            except Exception as e:
-                self.stats['failed_files'] += 1
-                self.stats['errors'].append(f"{pdf_file.name}: {str(e)}")
-                logger.error(f"❌ Error processing {pdf_file.name}: {e}")
+        self.stats['processed_files'] = len(all_schemes_by_amc)
+        self.stats['total_schemes'] = len(all_schemes)
+        self.stats['amcs_processed'] = len(all_schemes_by_amc)
+        
+        logger.info(f"📊 Processed {len(all_schemes_by_amc)} AMCs with {len(all_schemes)} total schemes")
         
         # Save to database if requested
         if save_to_db and self.db_interface:
@@ -121,7 +117,7 @@ class PlutoMoneyFactsheetProcessor:
         # Save to JSON if requested
         if save_to_json:
             try:
-                self._save_to_json(all_schemes)
+                self._save_to_json(all_schemes_by_amc)
             except Exception as e:
                 logger.error(f"❌ JSON save error: {e}")
         
@@ -130,32 +126,34 @@ class PlutoMoneyFactsheetProcessor:
         
         # Generate summary
         summary = self._generate_summary()
-        logger.info("🎉 Processing completed!")
+        logger.info("🎉 Scalable processing completed!")
         logger.info(f"📊 Summary: {summary}")
         
         return {
-            'schemes': all_schemes,
+            'schemes_by_amc': all_schemes_by_amc,
+            'all_schemes': all_schemes,
             'stats': self.stats,
             'summary': summary
         }
     
-    def _save_to_json(self, schemes: List[Dict[str, Any]]):
+    def _save_to_json(self, schemes_by_amc: Dict[str, List[Dict[str, Any]]]):
         """Save schemes to JSON file"""
         output_dir = Path("output")
         output_dir.mkdir(exist_ok=True)
         
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_file = output_dir / f"factsheet_extraction_{timestamp}.json"
+        output_file = output_dir / f"scalable_extraction_{timestamp}.json"
         
         data = {
             'metadata': {
-                'extraction_method': 'smart_hybrid',
-                'description': 'Smart hybrid extraction using Gemini + Regex',
-                'total_schemes': len(schemes),
+                'extraction_method': 'scalable_amc',
+                'description': 'Scalable extraction for 44+ AMCs with automatic detection',
+                'total_amcs': len(schemes_by_amc),
+                'total_schemes': sum(len(schemes) for schemes in schemes_by_amc.values()),
                 'extraction_date': datetime.now().isoformat(),
                 'stats': self.stats
             },
-            'schemes': schemes
+            'schemes_by_amc': schemes_by_amc
         }
         
         with open(output_file, 'w', encoding='utf-8') as f:
@@ -166,7 +164,7 @@ class PlutoMoneyFactsheetProcessor:
     def _generate_summary(self) -> str:
         """Generate processing summary"""
         return (
-            f"{self.stats['processed_files']}/{self.stats['total_files']} files processed, "
+            f"{self.stats['amcs_processed']} AMCs processed, "
             f"{self.stats['total_schemes']} schemes extracted, "
             f"{self.stats['new_schemes']} new, {self.stats['existing_schemes']} existing, "
             f"{self.stats['processing_time']:.2f}s total"
@@ -187,7 +185,7 @@ class PlutoMoneyFactsheetProcessor:
             output_dir.mkdir(exist_ok=True)
             
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            analysis_file = output_dir / f"analysis_report_{timestamp}.json"
+            analysis_file = output_dir / f"scalable_analysis_report_{timestamp}.json"
             
             with open(analysis_file, 'w', encoding='utf-8') as f:
                 json.dump(analysis, f, indent=2, ensure_ascii=False)
@@ -212,15 +210,15 @@ def main():
         # Process factsheets
         results = processor.process_factsheets(save_to_db=True, save_to_json=True)
         
-        if results and results.get('schemes'):
+        if results and results.get('all_schemes'):
             # Generate analysis
             analysis = processor.generate_analysis()
             
-            logger.info("🎉 All processing completed successfully!")
+            logger.info("🎉 All scalable processing completed successfully!")
             logger.info(f"📁 Check the 'output/' directory for results")
             
         else:
-            logger.error("❌ No schemes were extracted")
+            logger.info("ℹ️ No new schemes were extracted (all files already processed)")
             
     except Exception as e:
         logger.error(f"❌ Fatal error: {e}")

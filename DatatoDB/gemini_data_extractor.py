@@ -54,10 +54,19 @@ class GeminiDataExtractor:
             return {"error": str(e)}
     
     def _create_extraction_prompt(self, scheme_text: str, scheme_name: str, amc_name: str) -> str:
-        """Create a comprehensive prompt for Gemini"""
+        """Create a comprehensive prompt for Gemini with enhanced accuracy"""
         return f"""
 You are an expert financial data analyst specializing in mutual fund factsheet analysis. 
 Extract accurate, structured data from the following factsheet text with 100% precision.
+
+CRITICAL INSTRUCTIONS:
+1. Read the ENTIRE text carefully - data may be scattered across multiple sections
+2. Look for patterns like "NAV", "AUM", "Expense Ratio", "Fund Manager", "Benchmark"
+3. If data is not found, use "N/A" - DO NOT make up values
+4. For dates, use DD/MM/YYYY format
+5. For amounts, include currency symbol (₹) and "Crs" for crores
+6. For percentages, include "%" symbol
+7. Return ONLY valid JSON - no explanations or additional text
 
 FACTSHEET TEXT:
 {scheme_text}
