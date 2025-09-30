@@ -4,12 +4,12 @@
   "model": "gemini-2.5-flash",
   "rate_limit": "15 requests/min",
   "progress": {
-    "current": 21,
+    "current": 22,
     "total": 47,
-    "percentage": 44.68
+    "percentage": 46.81
   },
   "start_time": "2025-10-01T00:28:52.685247",
-  "last_updated": "2025-10-01T00:47:04.101495",
+  "last_updated": "2025-10-01T00:47:50.873936",
   "schemes": [
     {
       "Scheme_Name": "SBI Flexicap Fund",
@@ -1087,6 +1087,57 @@
       },
       "Exit_Load": {
         "Under_30_days": "0.50% of the units",
+        "30_-_90_days": "NIL",
+        "After_90_days": "NIL"
+      },
+      "Minimum_Monthly_SIP_investment_amount": "₹500",
+      "RisKometer_(Risk_Profile)": "N/A",
+      "CAGR": {
+        "1Y": "N/A",
+        "3Y": "N/A",
+        "5Y": "N/A",
+        "All": "N/A"
+      },
+      "Debt_Metrics": "N/A (Equity Fund)"
+    },
+    {
+      "Scheme_Name": "SBI Infrastructure Fund",
+      "Asset_Class": "Equity",
+      "Sub_Class": "Thematic",
+      "Type_of_Scheme": "An open-ended Equity Scheme following consumption theme.",
+      "Date_of_Allotment_(Inception_Date)": "05/07/1999",
+      "AUM_(as_of_Aug_2025)": "₹3,174.78 Crs",
+      "Fund_Manager_Name": "Mr. Ashit Desai",
+      "Fund_Manager_Tenure": "Since April 2024",
+      "Fund_Manager_Experience": "22 years",
+      "Benchmark": "Nifty India Consumption Index (TRI)",
+      "Options": "Regular (IDCW, Growth)",
+      "Expense_Ratio": {
+        "Direct": "N/A",
+        "Regular": "N/A"
+      },
+      "Risk_Metrics": {
+        "Standard_Deviation": "13.82%",
+        "Beta": "0.85",
+        "Sharpe_Ratio": "0.74"
+      },
+      "Turnover": {
+        "Equity_Portfolio_Turnover": "0.40",
+        "Total_Turnover": "0.51"
+      },
+      "Portfolio_Allocation_by_Market_Cap": {
+        "Large_Cap_(%)": "28.12",
+        "Mid_Cap_(%)": "43.47",
+        "Small_Cap_(%)": "24.13",
+        "Other_Assets_(%)": "4.19"
+      },
+      "NAV_Value_as_of_Aug_31_2025": {
+        "Regular_Growth": "₹311.3537",
+        "Regular_IDCW": "₹187.4564",
+        "Regular_ITC": "N/A"
+      },
+      "Exit_Load": {
+        "Under_30_days": "0.10% of the units",
         "30_-_90_days": "NIL",
         "After_90_days": "NIL"
       },
