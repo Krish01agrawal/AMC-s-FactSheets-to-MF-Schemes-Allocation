@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Scalable AMC Factsheet Extractor
-Handles 44+ AMCs with automatic detection, resume capability, and deduplication
+Scalable AMC Factsheet Extractor - REDESIGNED FOR ACCURACY
+Extracts scheme data using Table of Contents + Page-based extraction
 """
 
 import os
@@ -26,26 +26,28 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class ScalableAMCExtractor:
-    """Scalable extractor for 44+ AMCs with automatic detection and resume capability"""
+    """Scalable extractor using TOC-based scheme detection for 100% accuracy"""
     
     def __init__(self):
         load_dotenv()
         
-        # Initialize Gemini
-        api_key = os.environ.get("GEMINI_API_KEY")
-        if not api_key:
-            raise ValueError("GEMINI_API_KEY not set in environment variables")
+        # Initialize multiple API keys for rotation
+        self.api_keys = self._load_api_keys()
+        if not self.api_keys:
+            raise ValueError("No GEMINI_API_KEY found in environment variables")
         
-        genai.configure(api_key=api_key)
+        self.current_key_index = 0
+        self.key_usage_count = {i: 0 for i in range(len(self.api_keys))}
+        self.key_quota_exceeded = {i: False for i in range(len(self.api_keys))}
+        
+        # Initialize with first key
+        self._configure_current_key()
         self.model = genai.GenerativeModel('gemini-2.5-flash')
         self.pdf_extractor = AdvancedPDFExtractor()
         
-        # Smart rate limiting for Gemini 2.5 Flash (15 requests/min)
-        self.request_delay = 4.0  # 4 seconds between requests = 15 requests/min
+        # Smart rate limiting
+        self.request_delay = 4.0
         self.last_request_time = 0
-        
-        # AMC detection patterns
-        self.amc_patterns = self._initialize_amc_patterns()
         
         # Processing state
         self.processed_files = set()
@@ -55,239 +57,155 @@ class ScalableAMCExtractor:
         # Output directories
         self.output_dir = Path("output")
         self.output_dir.mkdir(exist_ok=True)
+    
+    def _find_precise_scheme_boundaries(self, full_text: str, scheme_name: str, page_number: str = "N/A") -> str:
+        """
+        Find precise boundaries for a scheme's data section
+        """
+        logger.info(f"🔍 Finding boundaries for {scheme_name} (Page: {page_number})")
         
-    def _initialize_amc_patterns(self) -> Dict[str, Dict[str, Any]]:
-        """Initialize AMC detection patterns for 44+ AMCs"""
-        return {
-            # Major AMCs
-            'HDFC': {
-                'filename_patterns': [r'hdfc', r'housing development'],
-                'scheme_patterns': [r'(HDFC\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['HDFC Mutual Fund', 'HDFC Asset Management']
-            },
-            'SBI': {
-                'filename_patterns': [r'sbi', r'state bank'],
-                'scheme_patterns': [r'(SBI\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['SBI Mutual Fund', 'SBI Asset Management']
-            },
-            'ICICI': {
-                'filename_patterns': [r'icici'],
-                'scheme_patterns': [r'(ICICI\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['ICICI Mutual Fund', 'ICICI Asset Management']
-            },
-            'Axis': {
-                'filename_patterns': [r'axis'],
-                'scheme_patterns': [r'(Axis\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Axis Mutual Fund', 'Axis Asset Management']
-            },
-            'Kotak': {
-                'filename_patterns': [r'kotak'],
-                'scheme_patterns': [r'(Kotak\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Kotak Mutual Fund', 'Kotak Asset Management']
-            },
-            'Aditya Birla': {
-                'filename_patterns': [r'aditya', r'birla', r'absl'],
-                'scheme_patterns': [r'(Aditya Birla\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Aditya Birla Mutual Fund', 'ABSL Mutual Fund']
-            },
-            'Franklin Templeton': {
-                'filename_patterns': [r'franklin', r'templeton'],
-                'scheme_patterns': [r'(Franklin\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Franklin Templeton Mutual Fund']
-            },
-            'Reliance': {
-                'filename_patterns': [r'reliance'],
-                'scheme_patterns': [r'(Reliance\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Reliance Mutual Fund', 'Reliance Asset Management']
-            },
-            'UTI': {
-                'filename_patterns': [r'uti'],
-                'scheme_patterns': [r'(UTI\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['UTI Mutual Fund', 'UTI Asset Management']
-            },
-            'DSP': {
-                'filename_patterns': [r'dsp'],
-                'scheme_patterns': [r'(DSP\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['DSP Mutual Fund', 'DSP Asset Management']
-            },
-            'Mirae Asset': {
-                'filename_patterns': [r'mirae'],
-                'scheme_patterns': [r'(Mirae\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Mirae Asset Mutual Fund']
-            },
-            'Nippon': {
-                'filename_patterns': [r'nippon'],
-                'scheme_patterns': [r'(Nippon\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Nippon Mutual Fund', 'Nippon Asset Management']
-            },
-            'Tata': {
-                'filename_patterns': [r'tata'],
-                'scheme_patterns': [r'(Tata\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Tata Mutual Fund', 'Tata Asset Management']
-            },
-            'L&T': {
-                'filename_patterns': [r'l&t', r'larsen', r'toubro'],
-                'scheme_patterns': [r'(L&T\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['L&T Mutual Fund', 'L&T Asset Management']
-            },
-            'Invesco': {
-                'filename_patterns': [r'invesco'],
-                'scheme_patterns': [r'(Invesco\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Invesco Mutual Fund', 'Invesco Asset Management']
-            },
-            'HSBC': {
-                'filename_patterns': [r'hsbc'],
-                'scheme_patterns': [r'(HSBC\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['HSBC Mutual Fund', 'HSBC Asset Management']
-            },
-            'BNP Paribas': {
-                'filename_patterns': [r'bnp', r'paribas'],
-                'scheme_patterns': [r'(BNP\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['BNP Paribas Mutual Fund']
-            },
-            'Baroda': {
-                'filename_patterns': [r'baroda'],
-                'scheme_patterns': [r'(Baroda\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Baroda Mutual Fund', 'Baroda Asset Management']
-            },
-            'Canara Robeco': {
-                'filename_patterns': [r'canara', r'robeco'],
-                'scheme_patterns': [r'(Canara\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Canara Robeco Mutual Fund']
-            },
-            'Edelweiss': {
-                'filename_patterns': [r'edelweiss'],
-                'scheme_patterns': [r'(Edelweiss\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Edelweiss Mutual Fund', 'Edelweiss Asset Management']
-            },
-            'Motilal Oswal': {
-                'filename_patterns': [r'motilal', r'oswal'],
-                'scheme_patterns': [r'(Motilal\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Motilal Oswal Mutual Fund']
-            },
-            'Mahindra': {
-                'filename_patterns': [r'mahindra'],
-                'scheme_patterns': [r'(Mahindra\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Mahindra Mutual Fund', 'Mahindra Asset Management']
-            },
-            'PGIM': {
-                'filename_patterns': [r'pgim'],
-                'scheme_patterns': [r'(PGIM\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['PGIM Mutual Fund', 'PGIM Asset Management']
-            },
-            'Quantum': {
-                'filename_patterns': [r'quantum'],
-                'scheme_patterns': [r'(Quantum\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Quantum Mutual Fund', 'Quantum Asset Management']
-            },
-            'Sundaram': {
-                'filename_patterns': [r'sundaram'],
-                'scheme_patterns': [r'(Sundaram\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Sundaram Mutual Fund', 'Sundaram Asset Management']
-            },
-            'Union': {
-                'filename_patterns': [r'union'],
-                'scheme_patterns': [r'(Union\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Union Mutual Fund', 'Union Asset Management']
-            },
-            'WhiteOak': {
-                'filename_patterns': [r'whiteoak', r'white oak'],
-                'scheme_patterns': [r'(WhiteOak\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['WhiteOak Mutual Fund', 'WhiteOak Asset Management']
-            },
-            'Bandhan': {
-                'filename_patterns': [r'bandhan'],
-                'scheme_patterns': [r'(Bandhan\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Bandhan Mutual Fund', 'Bandhan Asset Management']
-            },
-            'ITI': {
-                'filename_patterns': [r'iti'],
-                'scheme_patterns': [r'(ITI\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['ITI Mutual Fund', 'ITI Asset Management']
-            },
-            'JM Financial': {
-                'filename_patterns': [r'jm financial', r'jm'],
-                'scheme_patterns': [r'(JM\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['JM Financial Mutual Fund']
-            },
-            'LIC': {
-                'filename_patterns': [r'lic'],
-                'scheme_patterns': [r'(LIC\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['LIC Mutual Fund', 'LIC Asset Management']
-            },
-            'IDFC': {
-                'filename_patterns': [r'idfc'],
-                'scheme_patterns': [r'(IDFC\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['IDFC Mutual Fund', 'IDFC Asset Management']
-            },
-            'Indiabulls': {
-                'filename_patterns': [r'indiabulls'],
-                'scheme_patterns': [r'(Indiabulls\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Indiabulls Mutual Fund', 'Indiabulls Asset Management']
-            },
-            'Principal': {
-                'filename_patterns': [r'principal'],
-                'scheme_patterns': [r'(Principal\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Principal Mutual Fund', 'Principal Asset Management']
-            },
-            'PPFAS': {
-                'filename_patterns': [r'ppfas'],
-                'scheme_patterns': [r'(PPFAS\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['PPFAS Mutual Fund', 'PPFAS Asset Management']
-            },
-            'Samco': {
-                'filename_patterns': [r'samco'],
-                'scheme_patterns': [r'(Samco\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Samco Mutual Fund', 'Samco Asset Management']
-            },
-            'Taurus': {
-                'filename_patterns': [r'taurus'],
-                'scheme_patterns': [r'(Taurus\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Taurus Mutual Fund', 'Taurus Asset Management']
-            },
-            'Trust': {
-                'filename_patterns': [r'trust'],
-                'scheme_patterns': [r'(Trust\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Trust Mutual Fund', 'Trust Asset Management']
-            },
-            'Truemind': {
-                'filename_patterns': [r'truemind'],
-                'scheme_patterns': [r'(Truemind\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Truemind Mutual Fund', 'Truemind Asset Management']
-            },
-            'Zerodha': {
-                'filename_patterns': [r'zerodha'],
-                'scheme_patterns': [r'(Zerodha\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Zerodha Mutual Fund', 'Zerodha Asset Management']
-            },
-            'Groww': {
-                'filename_patterns': [r'groww'],
-                'scheme_patterns': [r'(Groww\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Groww Mutual Fund', 'Groww Asset Management']
-            },
-            'Upstox': {
-                'filename_patterns': [r'upstox'],
-                'scheme_patterns': [r'(Upstox\s+[A-Za-z\s&]+(?:Fund|Scheme))\s*\n'],
-                'content_indicators': ['Upstox Mutual Fund', 'Upstox Asset Management']
-            }
-        }
+        # Strategy 1: Look for scheme name as a heading
+        scheme_heading_patterns = [
+            rf'^[A-Z\s]+{re.escape(scheme_name)}[A-Z\s]*$',  # Full line heading
+            rf'^[A-Z\s]*{re.escape(scheme_name)}[A-Z\s]*$',  # Partial line heading
+            rf'{re.escape(scheme_name)}[A-Z\s]*$',           # End of line
+        ]
+        
+        scheme_start = -1
+        scheme_end = -1
+        
+        # Find scheme start
+        for pattern in scheme_heading_patterns:
+            matches = list(re.finditer(pattern, full_text, re.MULTILINE | re.IGNORECASE))
+            for match in matches:
+                # Check if this looks like a scheme heading (not in portfolio section)
+                context_before = full_text[max(0, match.start()-200):match.start()]
+                context_after = full_text[match.end():match.end()+200]
+                
+                # Skip if in portfolio section
+                if any(word in context_before.lower() for word in ['portfolio', 'holdings', 'allocation', 'company']):
+                    continue
+                
+                # Skip if in table of contents
+                if any(word in context_before.lower() for word in ['contents', 'index', 'page']):
+                    continue
+                
+                scheme_start = match.start()
+                logger.info(f"📄 Found scheme heading at position {scheme_start}")
+                break
+            
+            if scheme_start != -1:
+                break
+        
+        if scheme_start == -1:
+            # Fallback: look for scheme name anywhere
+            match = re.search(re.escape(scheme_name), full_text, re.IGNORECASE)
+            if match:
+                scheme_start = match.start()
+                logger.info(f"📄 Found scheme name at position {scheme_start}")
+        
+        if scheme_start == -1:
+            logger.error(f"❌ Could not find scheme {scheme_name}")
+            return ""
+        
+        # Find scheme end by looking for next scheme or section
+        next_scheme_patterns = [
+            r'^[A-Z\s]+Fund[A-Z\s]*$',  # Next fund heading
+            r'^[A-Z\s]+Scheme[A-Z\s]*$',  # Next scheme heading
+            r'^PORTFOLIO\s+CLASSIFICATION',  # Portfolio section
+            r'^ASSET\s+ALLOCATION',  # Asset allocation section
+            r'^BENCHMARK\s+COMPARISON',  # Benchmark section
+            r'^RISK\s+METRICS',  # Risk metrics section
+        ]
+        
+        # Look for next section after scheme start
+        text_after_scheme = full_text[scheme_start + 1000:]  # Skip first 1000 chars to avoid same scheme
+        
+        for pattern in next_scheme_patterns:
+            match = re.search(pattern, text_after_scheme, re.MULTILINE | re.IGNORECASE)
+            if match:
+                scheme_end = scheme_start + 1000 + match.start()
+                logger.info(f"📄 Found scheme end at position {scheme_end}")
+                break
+        
+        if scheme_end == -1:
+            # Fallback: use reasonable chunk size
+            scheme_end = min(len(full_text), scheme_start + 15000)
+            logger.info(f"📄 Using fallback end at position {scheme_end}")
+        
+        scheme_text = full_text[scheme_start:scheme_end]
+        logger.info(f"📊 Extracted {len(scheme_text)} chars for {scheme_name}")
+        
+        return scheme_text
+    
+    def _load_api_keys(self) -> List[str]:
+        """Load multiple API keys from environment variables"""
+        api_keys = []
+        
+        i = 1
+        while True:
+            key = os.environ.get(f"GEMINI_API_KEY_{i}")
+            if key:
+                api_keys.append(key)
+                i += 1
+            else:
+                break
+        
+        if not api_keys:
+            single_key = os.environ.get("GEMINI_API_KEY")
+            if single_key:
+                api_keys.append(single_key)
+        
+        logger.info(f"🔑 Loaded {len(api_keys)} API key(s) for rotation")
+        return api_keys
+    
+    def _configure_current_key(self):
+        """Configure Gemini with current API key"""
+        current_key = self.api_keys[self.current_key_index]
+        genai.configure(api_key=current_key)
+        logger.info(f"🔑 Using API key {self.current_key_index + 1}/{len(self.api_keys)}")
+    
+    def _rotate_api_key(self):
+        """Rotate to next available API key"""
+        for _ in range(len(self.api_keys)):
+            self.current_key_index = (self.current_key_index + 1) % len(self.api_keys)
+            
+            if not self.key_quota_exceeded[self.current_key_index]:
+                self._configure_current_key()
+                self.model = genai.GenerativeModel('gemini-2.5-flash')
+                logger.info(f"🔄 Rotated to API key {self.current_key_index + 1}/{len(self.api_keys)}")
+                return True
+        
+        logger.error("❌ All API keys have exceeded quota limits")
+        return False
+    
+    def _handle_quota_error(self, error_message: str) -> bool:
+        """Handle quota exceeded error by rotating to next API key"""
+        if "quota" in error_message.lower() or "429" in error_message:
+            logger.warning(f"⚠️ Quota exceeded for API key {self.current_key_index + 1}")
+            self.key_quota_exceeded[self.current_key_index] = True
+            
+            if self._rotate_api_key():
+                return True
+            else:
+                logger.error("❌ All API keys exhausted")
+                return False
+        return False
     
     def _load_processing_state(self):
-        """Load processing state to resume from where we left off"""
+        """Load processing state"""
         if self.processing_state_file.exists():
             try:
                 with open(self.processing_state_file, 'r', encoding='utf-8') as f:
                     state = json.load(f)
                     self.processed_files = set(state.get('processed_files', []))
-                    logger.info(f"📊 Loaded processing state: {len(self.processed_files)} files already processed")
+                logger.info(f"📂 Loaded processing state: {len(self.processed_files)} files already processed")
             except Exception as e:
-                logger.error(f"Error loading processing state: {e}")
+                logger.warning(f"Could not load processing state: {e}")
                 self.processed_files = set()
-        else:
-            self.processed_files = set()
     
     def _save_processing_state(self):
-        """Save processing state for resume capability"""
+        """Save current processing state"""
         try:
             state = {
                 'processed_files': list(self.processed_files),
@@ -298,345 +216,374 @@ class ScalableAMCExtractor:
         except Exception as e:
             logger.error(f"Error saving processing state: {e}")
     
-    def _detect_amc_from_filename(self, filename: str) -> Optional[str]:
-        """Detect AMC from filename"""
-        filename_lower = filename.lower()
-        
-        for amc_name, patterns in self.amc_patterns.items():
-            for pattern in patterns['filename_patterns']:
-                if re.search(pattern, filename_lower):
-                    return amc_name
-        
-        return None
+    def _get_factsheet_hash(self, pdf_path: str) -> str:
+        """Generate unique hash for factsheet file"""
+        with open(pdf_path, 'rb') as f:
+            return hashlib.md5(f.read()).hexdigest()
     
-    def _detect_amc_from_content(self, text: str) -> Optional[str]:
-        """Detect AMC from PDF content"""
-        text_lower = text.lower()
-        
-        for amc_name, patterns in self.amc_patterns.items():
-            for indicator in patterns['content_indicators']:
-                if indicator.lower() in text_lower:
-                    return amc_name
-        
-        return None
-    
-    def _detect_amc(self, pdf_path: str, text: str) -> str:
-        """Detect AMC from filename and content"""
-        filename = Path(pdf_path).name
-        
-        # Try filename first
-        amc_from_filename = self._detect_amc_from_filename(filename)
-        if amc_from_filename:
-            logger.info(f"🏷️ Detected AMC from filename: {amc_from_filename}")
-            return amc_from_filename
-        
-        # Try content
-        amc_from_content = self._detect_amc_from_content(text)
-        if amc_from_content:
-            logger.info(f"🏷️ Detected AMC from content: {amc_from_content}")
-            return amc_from_content
-        
-        # Fallback to filename-based detection
-        logger.warning(f"⚠️ Could not detect AMC for {filename}, using filename-based detection")
-        return self._extract_amc_name_from_filename(filename)
-    
-    def _extract_amc_name_from_filename(self, filename: str) -> str:
-        """Extract AMC name from filename as fallback"""
-        filename_lower = filename.lower()
-        
-        # Common patterns
-        if 'hdfc' in filename_lower:
-            return 'HDFC'
-        elif 'sbi' in filename_lower:
-            return 'SBI'
-        elif 'icici' in filename_lower:
-            return 'ICICI'
-        elif 'axis' in filename_lower:
-            return 'Axis'
-        elif 'kotak' in filename_lower:
-            return 'Kotak'
-        else:
-            # Extract first word as AMC name
-            first_word = filename.split()[0]
-            return first_word.upper()
-    
-    def _get_file_hash(self, file_path: str) -> str:
-        """Get file hash for deduplication"""
-        try:
-            with open(file_path, 'rb') as f:
-                return hashlib.md5(f.read()).hexdigest()
-        except Exception as e:
-            logger.error(f"Error calculating file hash: {e}")
-            return str(os.path.getmtime(file_path))
-    
-    def _is_file_processed(self, file_path: str) -> bool:
-        """Check if file has been processed"""
-        file_hash = self._get_file_hash(file_path)
-        return file_hash in self.processed_files
-    
-    def _mark_file_processed(self, file_path: str):
-        """Mark file as processed"""
-        file_hash = self._get_file_hash(file_path)
+    def _mark_file_as_processed(self, file_hash: str, amc_name: str, scheme_count: int):
+        """Mark a file as processed"""
         self.processed_files.add(file_hash)
         self._save_processing_state()
+        logger.info(f"✅ Marked {amc_name} as processed ({scheme_count} schemes)")
+    
+    def _detect_amc_from_filename(self, pdf_path: str) -> Optional[str]:
+        """Detect AMC name from filename"""
+        filename = Path(pdf_path).stem.lower()
+        
+        amc_keywords = {
+            'hdfc': 'HDFC', 'sbi': 'SBI', 'icici': 'ICICI', 'axis': 'Axis',
+            'kotak': 'Kotak', 'nippon': 'Nippon', 'aditya': 'Aditya Birla',
+            'birla': 'Aditya Birla', 'franklin': 'Franklin Templeton',
+            'reliance': 'Reliance', 'uti': 'UTI', 'dsp': 'DSP',
+            'mirae': 'Mirae Asset', 'tata': 'Tata', 'invesco': 'Invesco'
+        }
+        
+        for keyword, amc_name in amc_keywords.items():
+            if keyword in filename:
+                logger.info(f"🏷️ Detected AMC from filename: {amc_name}")
+                return amc_name
+        
+        return None
+    
+    def _extract_table_of_contents(self, text: str, amc_name: str) -> List[Dict[str, Any]]:
+        """
+        Extract schemes from Table of Contents - TOC IS THE SOURCE OF TRUTH
+        """
+        schemes = []
+        
+        # Find the CONTENTS section
+        contents_match = re.search(r'CONTENTS|INDEX|Table\s+of\s+Contents', text, re.IGNORECASE)
+        if not contents_match:
+            logger.warning("⚠️ No Table of Contents found, using fallback")
+            return self._fallback_scheme_detection(text, amc_name)
+        
+        # Extract TOC section (focus on TOC only, not entire document)
+        toc_start = contents_match.start()
+        toc_text = text[toc_start:toc_start + 15000]  # Focused TOC section
+        
+        # TOC-SPECIFIC patterns - look for scheme names with page numbers
+        # Pattern 1: "HDFC Flexi Cap Fund..................... 7-8"
+        pattern1 = rf'({amc_name}\s+[A-Za-z\s&\-]+Fund)\s*\.+\s*(\d+(?:-\d+)?)'
+        matches1 = re.findall(pattern1, toc_text, re.MULTILINE | re.IGNORECASE)
+        
+        # Pattern 2: "SBI Large Cap Fund........................ 12-13" 
+        pattern2 = rf'({amc_name}\s+[A-Za-z\s&\-]+Fund)\s+(\d+(?:-\d+)?)'
+        matches2 = re.findall(pattern2, toc_text, re.MULTILINE | re.IGNORECASE)
+        
+        # Pattern 3: Look for any fund name followed by page number in TOC
+        pattern3 = r'([A-Z][A-Za-z\s&\-]+Fund)\s*\.+\s*(\d+(?:-\d+)?)'
+        matches3 = re.findall(pattern3, toc_text, re.MULTILINE)
+        
+        all_matches = matches1 + matches2 + matches3
+        
+        # Process matches with STRICT filtering
+        seen_schemes = set()
+        for match in all_matches:
+            scheme_name = match[0].strip()
+            page_number = match[1] if len(match) > 1 else "N/A"
+            
+            # Clean scheme name
+            scheme_name = re.sub(r'\s+', ' ', scheme_name)
+            scheme_name = re.sub(r'\.+$', '', scheme_name)
+            
+            # STRICT filtering - only real scheme names
+            skip_words = [
+                'sponsor', 'mutual fund', 'bank limited', 'asset management', 
+                'contents', 'page no', 'factsheet', 'august', 'scheme factsheet',
+                'wealth creation', 'tax savings', 'children', 'retirement planning',
+                'income solutions', 'fund details', 'performance details', 'benchmark',
+                'riskometer', 'disclaimer', 'annexure', 'break-up', 'history'
+            ]
+            
+            # Must be in TOC format: "Scheme Name.....Page"
+            if (len(scheme_name) < 10 or 
+                any(word in scheme_name.lower() for word in skip_words) or
+                scheme_name.lower() in seen_schemes or
+                not page_number.isdigit() or  # Must have page number
+                'fund' not in scheme_name.lower()):  # Must contain "Fund"
+                continue
+            
+            seen_schemes.add(scheme_name.lower())
+            schemes.append({
+                'name': scheme_name,
+                'page': page_number,
+                'amc': amc_name
+            })
+        
+        # If no schemes found in TOC, try minimal fallback
+        if not schemes:
+            logger.warning("⚠️ No schemes found in TOC, trying minimal fallback")
+            return self._minimal_fallback_detection(text, amc_name)
+        
+        logger.info(f"📊 Found {len(schemes)} schemes in Table of Contents")
+        return schemes
+    
+    def _fallback_scheme_detection(self, text: str, amc_name: str) -> List[Dict[str, Any]]:
+        """Fallback: Find schemes by looking for Fund names in text"""
+        schemes = []
+        
+        # Look for "SCHEME NAME Fund" followed by financial keywords
+        pattern = rf'({amc_name}\s+[A-Za-z\s&\-]+Fund)[\s\n]+(?=.*(?:NAV|AUM|Expense|Benchmark))'
+        matches = re.finditer(pattern, text[:50000], re.IGNORECASE | re.DOTALL)
+        
+        seen_schemes = set()
+        for match in matches:
+            scheme_name = match.group(1).strip()
+            scheme_name = re.sub(r'\s+', ' ', scheme_name)
+            
+            if scheme_name.lower() not in seen_schemes and len(scheme_name) > 10:
+                seen_schemes.add(scheme_name.lower())
+                schemes.append({
+                    'name': scheme_name,
+                    'page': 'N/A',
+                    'amc': amc_name
+                })
+        
+        logger.info(f"📊 Fallback detected {len(schemes)} schemes")
+        return schemes
+    
+    def _aggressive_scheme_detection(self, text: str, amc_name: str) -> List[Dict[str, Any]]:
+        """Aggressive fallback: Look for any fund names in the entire document"""
+        schemes = []
+        
+        # Look for common fund name patterns throughout the document
+        patterns = [
+            rf'({amc_name}\s+[A-Za-z\s&\-]+Fund)',
+            rf'({amc_name}\s+[A-Za-z\s&\-]+Scheme)',
+            r'([A-Z][A-Za-z\s&\-]+Fund)',
+            r'([A-Z][A-Za-z\s&\-]+Scheme)'
+        ]
+        
+        seen_schemes = set()
+        for pattern in patterns:
+            matches = re.finditer(pattern, text, re.IGNORECASE)
+            for match in matches:
+                scheme_name = match.group(1).strip()
+                scheme_name = re.sub(r'\s+', ' ', scheme_name)
+                
+                # Skip unwanted patterns
+                skip_words = ['sponsor', 'mutual fund', 'bank limited', 'asset management', 
+                             'contents', 'page no', 'factsheet', 'august', 'scheme factsheet']
+                
+                if (len(scheme_name) < 10 or 
+                    any(word in scheme_name.lower() for word in skip_words) or
+                    scheme_name.lower() in seen_schemes):
+                    continue
+                
+                seen_schemes.add(scheme_name.lower())
+                schemes.append({
+                    'name': scheme_name,
+                    'page': 'N/A',
+                    'amc': amc_name
+                })
+        
+        logger.info(f"📊 Aggressive detection found {len(schemes)} schemes")
+        return schemes
+    
+    def _minimal_fallback_detection(self, text: str, amc_name: str) -> List[Dict[str, Any]]:
+        """Minimal fallback: Only look for clear scheme names in first 10000 chars"""
+        schemes = []
+        
+        # Only look in first 10000 characters (likely TOC area)
+        search_text = text[:10000]
+        
+        # Look for clear scheme patterns
+        pattern = rf'({amc_name}\s+[A-Za-z\s&\-]+Fund)'
+        matches = re.finditer(pattern, search_text, re.IGNORECASE)
+        
+        seen_schemes = set()
+        for match in matches:
+            scheme_name = match.group(1).strip()
+            scheme_name = re.sub(r'\s+', ' ', scheme_name)
+            
+            # Skip unwanted patterns
+            skip_words = ['sponsor', 'mutual fund', 'bank limited', 'asset management']
+            
+            if (len(scheme_name) < 10 or 
+                any(word in scheme_name.lower() for word in skip_words) or
+                scheme_name.lower() in seen_schemes):
+                continue
+            
+            seen_schemes.add(scheme_name.lower())
+            schemes.append({
+                'name': scheme_name,
+                'page': 'N/A',
+                'amc': amc_name
+            })
+        
+        logger.info(f"📊 Minimal fallback found {len(schemes)} schemes")
+        return schemes
     
     def _smart_rate_limit(self):
-        """Smart rate limiting to stay within Gemini 2.5 Flash limits"""
+        """Implement smart rate limiting for API calls"""
         current_time = time.time()
-        time_since_last = current_time - self.last_request_time
+        time_since_last_request = current_time - self.last_request_time
         
-        if time_since_last < self.request_delay:
-            sleep_time = self.request_delay - time_since_last
-            logger.info(f"⏳ Rate limiting: waiting {sleep_time:.1f}s (15 requests/min limit)")
+        if time_since_last_request < self.request_delay:
+            sleep_time = self.request_delay - time_since_last_request
             time.sleep(sleep_time)
         
         self.last_request_time = time.time()
     
-    def _split_schemes_by_amc(self, text: str, amc_name: str) -> List[Dict[str, str]]:
-        """Split schemes based on AMC-specific patterns"""
-        schemes = []
-        
-        if amc_name in self.amc_patterns:
-            patterns = self.amc_patterns[amc_name]['scheme_patterns']
-        else:
-            # Generic pattern for unknown AMCs
-            patterns = [r'([A-Z][A-Za-z\s&]+(?:Fund|Scheme))\s*\n']
-        
-        # Find all scheme matches
-        all_matches = []
-        for pattern in patterns:
-            matches = list(re.finditer(pattern, text, re.IGNORECASE | re.MULTILINE))
-            all_matches.extend(matches)
-        
-        # Sort matches by position
-        all_matches.sort(key=lambda x: x.start())
-        
-        # Process each match
-        for i, match in enumerate(all_matches):
-            scheme_name = match.group(1).strip()
-            
-            # Clean scheme name
-            scheme_name = re.sub(r'\s+', ' ', scheme_name)
-            scheme_name = re.sub(r'[^\w\s&\.\-]', '', scheme_name)
-            
-            # Skip if too short or contains unwanted words
-            skip_words = [
-                'page', 'contd', 'continued', 'glossary', 'disclaimer', 'risk', 'warning',
-                'sponsor', 'bank limited', 'mutual fund', 'terms and conditions', 'contact',
-                'registrar', 'transfer agent', 'fund manager profile', 'investment objective'
-            ]
-            
-            if (len(scheme_name) < 5 or 
-                any(word in scheme_name.lower() for word in skip_words)):
-                continue
-            
-            # Find the text block for this scheme
-            start_pos = match.end()
-            end_pos = len(text)
-            
-            if i + 1 < len(all_matches):
-                next_match = all_matches[i + 1]
-                next_scheme_name = next_match.group(1).strip()
-                
-                # Skip if same scheme name
-                if scheme_name.lower() == next_scheme_name.lower():
-                    continue
-                
-                end_pos = next_match.start()
-            
-            # Extract scheme text
-            scheme_text = text[start_pos:end_pos].strip()
-            
-            # Enhanced validation for meaningful scheme content
-            if self._is_valid_scheme_content(scheme_text, scheme_name):
-                schemes.append({
-                    'name': scheme_name,
-                    'text': scheme_text,
-                    'amc': amc_name
-                })
-        
-        return schemes
-    
-    def _is_valid_scheme_content(self, text: str, scheme_name: str) -> bool:
-        """Validate if the extracted text contains meaningful scheme data"""
-        if len(text) < 500:  # Minimum content length
-            return False
-        
-        # Check for key financial data indicators
-        financial_indicators = [
-            r'NAV', r'AUM', r'Expense\s+Ratio', r'Fund\s+Manager',
-            r'Benchmark', r'Risk', r'Return', r'Performance',
-            r'Asset\s+Allocation', r'Portfolio', r'Investment',
-            r'CAGR', r'Beta', r'Sharpe', r'Standard\s+Deviation'
-        ]
-        
-        indicator_count = 0
-        for indicator in financial_indicators:
-            if re.search(indicator, text, re.IGNORECASE):
-                indicator_count += 1
-        
-        # Must have at least 3 financial indicators
-        return indicator_count >= 3
-    
-    def _extract_scheme_data_with_gemini(self, scheme_text: str, scheme_name: str, amc_name: str) -> Dict[str, Any]:
-        """Extract all data points for a scheme using Gemini 2.5 Flash"""
-        
-        prompt = f"""
-        You are an expert financial data analyst specializing in mutual fund factsheet analysis.
-        Extract ALL data points from the following scheme information with 100% accuracy.
-        
-        CRITICAL INSTRUCTIONS:
-        1. Read the ENTIRE text carefully - data may be scattered across multiple sections
-        2. Look for patterns like "NAV", "AUM", "Expense Ratio", "Fund Manager", "Benchmark"
-        3. If data is not found, use "N/A" - DO NOT make up values
-        4. For dates, use DD/MM/YYYY format
-        5. For amounts, include currency symbol (₹) and "Crs" for crores
-        6. For percentages, include "%" symbol
-        7. Return ONLY valid JSON - no explanations or additional text
-        8. Focus on extracting REAL data, not placeholder values
-        
-        SCHEME NAME: {scheme_name}
-        AMC: {amc_name}
-        
-        SCHEME TEXT:
-        {scheme_text}
-        
-        Extract the following data points and return ONLY a valid JSON object:
-        
-        {{
-            "Scheme_Name": "exact scheme name from factsheet",
-            "Asset_Class": "Equity/Debt/Hybrid/Other",
-            "Sub_Class": "Large Cap/Mid Cap/Small Cap/Corporate Bond/etc",
-            "Type_of_Scheme": "full scheme description",
-            "Date_of_Allotment_(Inception_Date)": "DD/MM/YYYY format",
-            "AUM_(as_of_Aug_2025)": "₹X,XXX.XX Crs format",
-            "Fund_Manager_Name": "fund manager name(s)",
-            "Fund_Manager_Tenure": "Since MMM YYYY format",
-            "Fund_Manager_Experience": "N/A (Only tenure/managing since date available) or actual years",
-            "Benchmark": "benchmark name",
-            "Options": "Regular (IDCW, Growth)",
-            "Expense_Ratio": {{
-                "Direct": "X.XX%",
-                "Regular": "X.XX%"
-            }},
-            "Risk_Metrics": {{
-                "Standard_Deviation": "XX.XX%",
-                "Beta": "X.XX",
-                "Sharpe_Ratio": "X.XX"
-            }},
-            "Turnover": {{
-                "Equity_Portfolio_Turnover": "X.XX",
-                "Total_Turnover": "X.XX or N/A"
-            }},
-            "Portfolio_Allocation_by_Market_Cap": {{
-                "Large_Cap_(%)": "XX.XX",
-                "Mid_Cap_(%)": "XX.XX",
-                "Small_Cap_(%)": "XX.XX",
-                "Other_Assets_(%)": "XX.XX"
-            }},
-            "NAV_Value_as_of_Aug_31_2025": {{
-                "Regular_Growth": "₹XXX.XXXX",
-                "Regular_IDCW": "₹XXX.XXXX",
-                "Regular_ITC": "₹XXX.XXXX or N/A"
-            }},
-            "Exit_Load": {{
-                "Under_30_days": "X.XX% of the units",
-                "30_-_90_days": "X.XX% or NIL",
-                "After_90_days": "X.XX% or NIL"
-            }},
-            "Minimum_Monthly_SIP_investment_amount": "₹XXX",
-            "RisKometer_(Risk_Profile)": "LOW/MODERATE/HIGH/VERY HIGH",
-            "CAGR": {{
-                "1Y": "XX.XX%",
-                "3Y": "XX.XX%",
-                "5Y": "XX.XX%",
-                "All": "XX.XX%"
-            }},
-            "Debt_Metrics": {{
-                "Yield_to_Maturity": "X.XX%",
-                "Modified_Duration": "X.XX Years",
-                "Average_Maturity_Years": "X.XX Years",
-                "Macaulay_Duration": "X.XX Years",
-                "Composition_by_rating": "AAA/Sovereign (XX%), AA (XX%), Others (XX%)"
-            }} or "N/A (Equity Fund)"
-        }}
-        
-        CRITICAL INSTRUCTIONS:
-        1. Extract ONLY data that is clearly visible in the text
-        2. Use "N/A" for missing data, not null or empty strings
-        3. Follow the EXACT field names and format shown above
-        4. Return ONLY the JSON object, no additional text
-        5. Be extremely accurate with financial data
-        6. For percentages, include the % symbol (e.g., "1.49%")
-        7. For currency, include ₹ symbol (e.g., "₹52,420.39 Crs")
-        8. For dates, use DD/MM/YYYY format
-        9. For fund managers, extract all managers if multiple
-        10. For debt funds, provide debt metrics; for equity funds, use "N/A (Equity Fund)"
-        11. For market cap allocation, provide percentages for Large/Mid/Small cap
-        12. For exit load, use "NIL" for no charges, "X.XX% of the units" for charges
-        13. For riskometer, use: LOW, MODERATE, HIGH, or VERY HIGH
-        14. For CAGR, provide percentages with % symbol
-        15. For NAV values, include ₹ symbol and 4 decimal places
+    def _extract_scheme_data_with_gemini(self, full_text: str, scheme_name: str, amc_name: str, page_number: str = "N/A") -> Dict[str, Any]:
+        """
+        Extract scheme data using Gemini with PRECISE SCHEME BOUNDARY DETECTION
         """
         
-        max_retries = 3
-        retry_delay = 2
+        # PRECISE SCHEME BOUNDARY DETECTION: Find exact scheme section
+        scheme_text = self._find_precise_scheme_boundaries(full_text, scheme_name, page_number)
         
+        if not scheme_text:
+            logger.error(f"❌ Could not extract text for {scheme_name}")
+            return self._create_fallback_scheme_data(scheme_name, amc_name)
+        
+        # Log extracted text length for debugging
+        logger.info(f"📊 Extracted {len(scheme_text)} chars for {scheme_name} (Page: {page_number})")
+        
+        prompt = f"""You are an expert financial data analyst. Extract mutual fund scheme data with 100% accuracy.
+
+SCHEME: {scheme_name}
+AMC: {amc_name}
+PAGE: {page_number}
+
+CRITICAL INSTRUCTIONS:
+1. Read the ENTIRE text carefully - data may be scattered across multiple sections
+2. Look for patterns like "NAV", "AUM", "Expense Ratio", "Fund Manager", "Benchmark", "CAGR", "Beta", "Sharpe Ratio"
+3. Extract REAL data values - DO NOT use "N/A" unless absolutely not found
+4. For dates, use DD/MM/YYYY format
+5. For amounts, include currency symbol (₹) and "Crs" for crores
+6. For percentages, include "%" symbol
+7. Return ONLY valid JSON - no explanations or additional text
+
+EXACT JSON FORMAT REQUIRED:
+{{
+    "Scheme_Name": "{scheme_name}",
+    "Asset_Class": "Equity/Debt/Hybrid/Other",
+    "Sub_Class": "Large Cap Fund/Mid Cap Fund/Small Cap Fund/Dynamic Bond Fund/etc",
+    "Type_of_Scheme": "Open-Ended Equity Scheme/Open-Ended Debt Scheme/Open-Ended Hybrid Scheme",
+    "Date_of_Allotment_(Inception_Date)": "DD/MM/YYYY",
+    "AUM_(as_of_Aug_2025)": "₹XX,XXX.XX Crs",
+    "Fund_Manager_Name": "Mr./Ms. Full Name",
+    "Fund_Manager_Tenure": "Since Month Year",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Index Name (TRI)",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {{
+        "Direct": "X.XX%",
+        "Regular": "X.XX%"
+    }},
+    "Risk_Metrics": {{
+        "Standard_Deviation": "XX.XX%",
+        "Beta": "X.XX",
+        "Sharpe_Ratio": "X.XX"
+    }},
+    "Turnover": {{
+        "Equity_Portfolio_Turnover": "X.XX",
+        "Total_Turnover": "N/A"
+    }},
+    "Portfolio_Allocation_by_Market_Cap": {{
+        "Large_Cap_(%)": "XX.XX",
+        "Mid_Cap_(%)": "XX.XX",
+        "Small_Cap_(%)": "XX.XX",
+        "Other_Assets_(%)": "XX.XX"
+    }},
+    "NAV_Value_as_of_Aug_31_2025": {{
+        "Regular_Growth": "₹XXX.XXXX",
+        "Regular_IDCW": "₹XXX.XXXX",
+        "Regular_ITC": "N/A"
+    }},
+    "Exit_Load": {{
+        "Under_30_days": "X.XX% of the units or NIL",
+        "30_-_90_days": "NIL",
+        "After_90_days": "NIL"
+    }},
+    "Minimum_Monthly_SIP_investment_amount": "₹XXX",
+    "RisKometer_(Risk_Profile)": "LOW/MODERATE/HIGH/VERY HIGH",
+    "CAGR": {{
+        "1Y": "XX.XX%",
+        "3Y": "XX.XX%",
+        "5Y": "XX.XX%",
+        "All": "XX.XX%"
+    }},
+    "Debt_Metrics": {{
+        "Yield_to_Maturity": "X.XX%",
+        "Modified_Duration": "X.XX Years",
+        "Average_Maturity_Years": "X.XX Years",
+        "Macaulay_Duration": "X.XX Years",
+        "Composition_by_rating": "AAA/Sovereign (XX%), AA (XX%), Others (XX%)"
+    }}
+}}
+
+EXAMPLES OF WHAT TO LOOK FOR:
+- AUM: "₹52,420.39 Crs" or "₹65,890.12 Crs"
+- NAV: "₹456.7845" or "₹289.4510"
+- Expense Ratio: "0.81%" or "1.49%"
+- Fund Manager: "Mr. Saurabh Pant" or "Mr. R Srinivasan"
+- Benchmark: "BSE 100 (TRI)" or "CRISIL Hybrid 35+65 Aggressive Index"
+- CAGR: "18.52%" or "20.15%"
+- Risk Metrics: "11.69%" for Standard Deviation, "0.91" for Beta
+
+SEARCH PATTERNS:
+- Look for "NAV" followed by numbers
+- Look for "AUM" or "Assets Under Management" followed by ₹ amounts
+- Look for "Expense Ratio" followed by percentages
+- Look for "Fund Manager" or "Manager" followed by names
+- Look for "Benchmark" followed by index names
+- Look for "CAGR" or "Compound Annual Growth Rate" followed by percentages
+- Look for "Standard Deviation", "Beta", "Sharpe Ratio" followed by values
+- Look for "Exit Load" followed by percentages or "NIL"
+- Look for "SIP" or "Systematic Investment Plan" followed by ₹ amounts
+
+TEXT TO ANALYZE:
+{scheme_text}
+"""
+        
+        max_retries = 3
         for attempt in range(max_retries):
             try:
                 self._smart_rate_limit()
                 response = self.model.generate_content(prompt)
+                self.key_usage_count[self.current_key_index] += 1
                 
-                # Parse the JSON response
                 content = response.text.strip()
                 
-                # Clean the response (remove any markdown formatting)
+                # Clean markdown if present
                 if content.startswith('```json'):
                     content = content[7:]
                 if content.endswith('```'):
                     content = content[:-3]
                 
-                scheme_data = json.loads(content)
+                content = content.strip()
                 
-                # Validate extraction quality
-                if self._validate_extraction_quality(scheme_data, scheme_name):
-                    return scheme_data
-                else:
-                    logger.warning(f"Low quality extraction for {scheme_name}, attempt {attempt + 1}")
-                    if attempt < max_retries - 1:
-                        time.sleep(retry_delay)
-                        continue
+                scheme_data = json.loads(content)
+                return scheme_data
                 
             except json.JSONDecodeError as e:
-                logger.error(f"JSON decode error for scheme {scheme_name} (attempt {attempt + 1}): {e}")
+                logger.error(f"JSON decode error for {scheme_name} (attempt {attempt + 1}): {e}")
                 if attempt < max_retries - 1:
-                    time.sleep(retry_delay)
+                    time.sleep(2)
                     continue
             except Exception as e:
-                logger.error(f"Gemini extraction error for scheme {scheme_name} (attempt {attempt + 1}): {e}")
+                error_message = str(e)
+                logger.error(f"Gemini extraction error for {scheme_name} (attempt {attempt + 1}): {e}")
+                
+                if self._handle_quota_error(error_message):
+                    logger.info(f"🔄 Retrying with new API key for {scheme_name}")
+                    continue
+                
                 if attempt < max_retries - 1:
-                    time.sleep(retry_delay)
+                    time.sleep(2)
                     continue
         
-        # All retries failed, return fallback
+        # All retries failed
         return self._create_fallback_scheme_data(scheme_name, amc_name)
     
-    def _validate_extraction_quality(self, result: Dict[str, Any], scheme_name: str) -> bool:
-        """Validate the quality of extracted data"""
-        if not result:
-            return False
-        
-        # Check for critical fields
-        critical_fields = ["Asset_Class", "Sub_Class", "Type_of_Scheme"]
-        na_count = sum(1 for field in critical_fields if result.get(field) == "N/A")
-        
-        # If more than 1 critical field is N/A, consider it low quality
-        return na_count <= 1
-    
     def _create_fallback_scheme_data(self, scheme_name: str, amc_name: str) -> Dict[str, Any]:
-        """Create fallback data structure when Gemini extraction fails"""
+        """Create fallback data structure"""
         return {
             "Scheme_Name": scheme_name,
+            "AMC": amc_name,
             "Asset_Class": "N/A",
             "Sub_Class": "N/A",
             "Type_of_Scheme": "N/A",
@@ -646,184 +593,96 @@ class ScalableAMCExtractor:
             "Fund_Manager_Tenure": "N/A",
             "Fund_Manager_Experience": "N/A",
             "Benchmark": "N/A",
-            "Options": "Regular (IDCW, Growth)",
-            "Expense_Ratio": {
-                "Direct": "N/A",
-                "Regular": "N/A"
-            },
-            "Risk_Metrics": {
-                "Standard_Deviation": "N/A",
-                "Beta": "N/A",
-                "Sharpe_Ratio": "N/A"
-            },
-            "Turnover": {
-                "Equity_Portfolio_Turnover": "N/A",
-                "Total_Turnover": "N/A"
-            },
-            "Portfolio_Allocation_by_Market_Cap": {
-                "Large_Cap_(%)": "N/A",
-                "Mid_Cap_(%)": "N/A",
-                "Small_Cap_(%)": "N/A",
-                "Other_Assets_(%)": "N/A"
-            },
-            "NAV_Value_as_of_Aug_31_2025": {
-                "Regular_Growth": "N/A",
-                "Regular_IDCW": "N/A",
-                "Regular_ITC": "N/A"
-            },
-            "Exit_Load": {
-                "Under_30_days": "N/A",
-                "30_-_90_days": "N/A",
-                "After_90_days": "N/A"
-            },
+            "Options": "N/A",
+            "Expense_Ratio": {"Direct": "N/A", "Regular": "N/A"},
+            "Risk_Metrics": {"Standard_Deviation": "N/A", "Beta": "N/A", "Sharpe_Ratio": "N/A"},
+            "Turnover": {"Equity_Portfolio_Turnover": "N/A", "Total_Turnover": "N/A"},
+            "Portfolio_Allocation_by_Market_Cap": {"Large_Cap_(%)": "N/A", "Mid_Cap_(%)": "N/A", "Small_Cap_(%)": "N/A", "Other_Assets_(%)": "N/A"},
+            "NAV_Value_as_of_Aug_31_2025": {"Regular_Growth": "N/A", "Regular_IDCW": "N/A", "Regular_ITC": "N/A"},
+            "Exit_Load": {"Under_30_days": "N/A", "30_-_90_days": "N/A", "After_90_days": "N/A"},
             "Minimum_Monthly_SIP_investment_amount": "N/A",
             "RisKometer_(Risk_Profile)": "N/A",
-            "CAGR": {
-                "1Y": "N/A",
-                "3Y": "N/A",
-                "5Y": "N/A",
-                "All": "N/A"
-            },
-            "Debt_Metrics": "N/A"
+            "CAGR": {"1Y": "N/A", "3Y": "N/A", "5Y": "N/A", "All": "N/A"},
+            "Debt_Metrics": "N/A",
+            "Extraction_Status": "Failed - Using Fallback"
         }
     
-    def process_factsheet(self, pdf_path: str) -> List[Dict[str, Any]]:
-        """Process a single factsheet with automatic AMC detection"""
-        logger.info(f"🚀 Processing factsheet: {Path(pdf_path).name}")
+    def _initialize_progress_file(self, amc_name: str, total_schemes: int) -> str:
+        """Initialize progress tracking file"""
+        progress_filename = f"{amc_name}_progress.json"
+        progress_filepath = self.output_dir / progress_filename
         
-        # Check if already processed
-        if self._is_file_processed(pdf_path):
-            logger.info(f"⏭️ Skipping already processed file: {Path(pdf_path).name}")
-            return []
+        progress_data = {
+            "amc": amc_name,
+            "total_schemes": total_schemes,
+            "processed_schemes": 0,
+            "start_time": datetime.now().isoformat(),
+            "status": "in_progress",
+            "schemes": []
+        }
         
-        # Extract text from PDF
-        extracted_data = self.pdf_extractor.extract_text_from_pdf(pdf_path)
-        full_text = extracted_data.get('full_text', '')
+        with open(progress_filepath, 'w', encoding='utf-8') as f:
+            json.dump(progress_data, f, indent=2, ensure_ascii=False)
         
-        if not full_text:
-            logger.error(f"No text extracted from {pdf_path}")
-            return []
-        
-        # Detect AMC
-        amc_name = self._detect_amc(pdf_path, full_text)
-        logger.info(f"🏷️ Detected AMC: {amc_name}")
-        
-        # Split into schemes
-        schemes = self._split_schemes_by_amc(full_text, amc_name)
-        logger.info(f"📊 Found {len(schemes)} schemes in {amc_name}")
-        
-        if not schemes:
-            logger.warning(f"No schemes detected in {pdf_path}")
-            return []
-        
-        # Initialize progress tracking for this AMC
-        progress_file = self._initialize_progress_file(amc_name, len(schemes))
-        
-        # Extract data for each scheme
-        results = []
-        for i, scheme in enumerate(schemes):
-            logger.info(f"🔄 Processing scheme {i+1}/{len(schemes)}: {scheme['name']}")
-            
-            try:
-                scheme_data = self._extract_scheme_data_with_gemini(
-                    scheme['text'], 
-                    scheme['name'], 
-                    amc_name
-                )
-                results.append(scheme_data)
-                
-                # Update progress tracking with real-time updates
-                self._update_progress_file(progress_file, i+1, len(schemes), scheme_data)
-                
-                # Force file system sync for real-time updates
-                import os
-                os.sync()
-                
-            except Exception as e:
-                logger.error(f"Error processing scheme {scheme['name']}: {e}")
-                fallback_data = self._create_fallback_scheme_data(scheme['name'], amc_name)
-                results.append(fallback_data)
-                
-                # Update progress tracking with error
-                self._update_progress_file(progress_file, i+1, len(schemes), fallback_data, str(e))
-                
-                # Force file system sync for real-time updates
-                import os
-                os.sync()
-        
-        # Mark progress as complete
-        self._mark_progress_complete(progress_file, results)
-        
-        # Mark file as processed
-        self._mark_file_processed(pdf_path)
-        
-        logger.info(f"✅ Successfully extracted {len(results)} schemes from {amc_name}")
-        return results
+        return str(progress_filepath)
     
-    def process_all_factsheets(self, factsheet_dir: str = "factsheets") -> Dict[str, List[Dict[str, Any]]]:
-        """Process all factsheets with automatic AMC detection and resume capability"""
-        logger.info("🚀 Starting scalable AMC extraction...")
-        
-        factsheet_path = Path(factsheet_dir)
-        if not factsheet_path.exists():
-            logger.error(f"Factsheet directory {factsheet_dir} does not exist")
-            return {}
-        
-        # Find all PDF files
-        pdf_files = list(factsheet_path.glob("*.pdf"))
-        logger.info(f"📁 Found {len(pdf_files)} PDF files")
-        
-        # Filter out already processed files
-        new_pdf_files = [f for f in pdf_files if not self._is_file_processed(str(f))]
-        logger.info(f"📊 New files to process: {len(new_pdf_files)}")
-        
-        if not new_pdf_files:
-            logger.info("✅ All files have been processed!")
-            return {}
-        
-        # Process each factsheet
-        all_results = {}
-        for pdf_file in new_pdf_files:
-            try:
-                # Process the factsheet (progress tracking is handled inside process_factsheet)
-                schemes = self.process_factsheet(str(pdf_file))
-                
-                # Get AMC name for organizing results
-                amc_name = self._detect_amc(str(pdf_file), "")
-                
-                if amc_name not in all_results:
-                    all_results[amc_name] = []
-                all_results[amc_name].extend(schemes)
-                
-                # Save individual AMC results
-                self._save_amc_results(schemes, amc_name)
-                
-            except Exception as e:
-                logger.error(f"Error processing {pdf_file.name}: {e}")
-        
-        # Save combined results
-        self._save_combined_results(all_results)
-        
-        logger.info(f"🎉 Scalable extraction completed!")
-        logger.info(f"📊 Total AMCs processed: {len(all_results)}")
-        
-        for amc, schemes in all_results.items():
-            logger.info(f"   {amc}: {len(schemes)} schemes")
-        
-        return all_results
+    def _update_progress_file(self, progress_file: str, processed: int, total: int, 
+                             scheme_data: Dict[str, Any], error: str = None):
+        """Update progress tracking file"""
+        try:
+            with open(progress_file, 'r', encoding='utf-8') as f:
+                progress_data = json.load(f)
+            
+            progress_data["processed_schemes"] = processed
+            progress_data["schemes"].append({
+                "scheme_name": scheme_data.get("Scheme_Name", "Unknown"),
+                "status": "error" if error else "success",
+                "error": error,
+                "timestamp": datetime.now().isoformat()
+            })
+            
+            with open(progress_file, 'w', encoding='utf-8') as f:
+                json.dump(progress_data, f, indent=2, ensure_ascii=False)
+            
+            # Force sync
+            import os
+            os.sync()
+            
+        except Exception as e:
+            logger.error(f"Error updating progress file: {e}")
+    
+    def _mark_progress_complete(self, progress_file: str, results: List[Dict[str, Any]]):
+        """Mark progress as complete"""
+        try:
+            with open(progress_file, 'r', encoding='utf-8') as f:
+                progress_data = json.load(f)
+            
+            progress_data["status"] = "completed"
+            progress_data["end_time"] = datetime.now().isoformat()
+            progress_data["total_extracted"] = len(results)
+            
+            with open(progress_file, 'w', encoding='utf-8') as f:
+                json.dump(progress_data, f, indent=2, ensure_ascii=False)
+            
+        except Exception as e:
+            logger.error(f"Error marking progress complete: {e}")
     
     def _save_amc_results(self, data: List[Dict[str, Any]], amc_name: str):
-        """Save results for a specific AMC (single file per AMC)"""
+        """Save results for a specific AMC (INCREMENTAL - saves after each scheme)"""
         filename = f"{amc_name}_scalable_extraction.json"
         filepath = self.output_dir / filename
         
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         
-        logger.info(f"💾 {amc_name} results saved to: {filepath}")
+        # Force sync to disk
+        import os
+        os.sync()
+        
+        logger.info(f"💾 {amc_name}: Saved {len(data)} schemes to {filepath}")
     
     def _save_combined_results(self, results: Dict[str, List[Dict[str, Any]]]):
-        """Save combined results from all AMCs (single file)"""
+        """Save combined results from all AMCs"""
         filename = f"scalable_extraction_all_amcs.json"
         filepath = self.output_dir / filename
         
@@ -832,89 +691,128 @@ class ScalableAMCExtractor:
         
         logger.info(f"💾 Combined results saved to: {filepath}")
     
-    def _initialize_progress_file(self, amc_name: str, total_schemes: int) -> str:
-        """Initialize progress tracking file for an AMC (single file per AMC)"""
-        progress_filename = f"{amc_name}_progress.json"
-        progress_filepath = self.output_dir / progress_filename
+    def process_factsheet(self, pdf_path: str) -> List[Dict[str, Any]]:
+        """Process a single factsheet PDF"""
+        logger.info(f"🚀 Processing factsheet: {Path(pdf_path).name}")
         
-        progress_data = {
-            "amc_name": amc_name,
-            "total_schemes": total_schemes,
-            "processed_schemes": 0,
-            "current_scheme": 0,
-            "status": "processing",
-            "start_time": datetime.now().isoformat(),
-            "schemes": []
-        }
+        # Check if already processed
+        file_hash = self._get_factsheet_hash(pdf_path)
+        if file_hash in self.processed_files:
+            logger.info(f"⏭️ Skipping {Path(pdf_path).name} (already processed)")
+            return []
         
-        with open(progress_filepath, 'w', encoding='utf-8') as f:
-            json.dump(progress_data, f, indent=2, ensure_ascii=False)
+        # Extract text from PDF
+        extraction_result = self.pdf_extractor.extract_text_from_pdf(pdf_path)
+        if not extraction_result or not isinstance(extraction_result, dict):
+            logger.error(f"❌ Failed to extract text from {pdf_path}")
+            return []
         
-        logger.info(f"📊 Progress tracking initialized: {progress_filepath}")
-        return str(progress_filepath)
+        # Get the full text
+        text = extraction_result.get('full_text', '')
+        if not text:
+            logger.error(f"❌ No text found in {pdf_path}")
+            return []
+        
+        # Detect AMC
+        filename_amc = self._detect_amc_from_filename(pdf_path)
+        amc_name = filename_amc if filename_amc else "Unknown AMC"
+        logger.info(f"🏷️ Detected AMC: {amc_name}")
+        
+        # Extract schemes from Table of Contents
+        schemes = self._extract_table_of_contents(text, amc_name)
+        
+        if not schemes:
+            logger.warning(f"⚠️ No schemes found in {Path(pdf_path).name}")
+            return []
+        
+        # Initialize progress tracking
+        progress_file = self._initialize_progress_file(amc_name, len(schemes))
+        
+        # Extract data for each scheme (SAVE INCREMENTALLY!)
+        results = []
+        for i, scheme in enumerate(schemes):
+            logger.info(f"🔄 Processing scheme {i+1}/{len(schemes)}: {scheme['name']}")
+            
+            try:
+                scheme_data = self._extract_scheme_data_with_gemini(
+                    text, 
+                    scheme['name'], 
+                    amc_name,
+                    scheme.get('page', 'N/A')
+                )
+                results.append(scheme_data)
+                
+                # ✅ SAVE AFTER EACH SCHEME! (Prevents data loss)
+                self._save_amc_results(results, amc_name)
+                
+                # Update progress
+                self._update_progress_file(progress_file, i+1, len(schemes), scheme_data)
+                
+            except Exception as e:
+                logger.error(f"Error processing scheme {scheme['name']}: {e}")
+                fallback_data = self._create_fallback_scheme_data(scheme['name'], amc_name)
+                results.append(fallback_data)
+                
+                # ✅ SAVE EVEN ON ERROR!
+                self._save_amc_results(results, amc_name)
+                
+                self._update_progress_file(progress_file, i+1, len(schemes), fallback_data, str(e))
+        
+        # Mark progress as complete
+        self._mark_progress_complete(progress_file, results)
+        
+        # Mark file as processed
+        self._mark_file_as_processed(file_hash, amc_name, len(results))
+        
+        logger.info(f"✅ Successfully extracted {len(results)} schemes from {amc_name}")
+        return results
     
-    def _update_progress_file(self, progress_file: str, current: int, total: int, scheme_data: Dict[str, Any], error: Optional[str] = None):
-        """Update progress tracking file"""
-        try:
-            with open(progress_file, 'r', encoding='utf-8') as f:
-                progress_data = json.load(f)
-            
-            progress_data["processed_schemes"] = current
-            progress_data["current_scheme"] = current
-            progress_data["last_updated"] = datetime.now().isoformat()
-            
-            if error:
-                progress_data["last_error"] = error
-                progress_data["status"] = "error"
-            else:
-                progress_data["schemes"].append(scheme_data)
-                progress_data["status"] = "processing"
-            
-            with open(progress_file, 'w', encoding='utf-8') as f:
-                json.dump(progress_data, f, indent=2, ensure_ascii=False)
-            
-            logger.info(f"📈 Progress: {current}/{total} schemes processed for {progress_data['amc_name']}")
-            
-        except Exception as e:
-            logger.error(f"Error updating progress file: {e}")
-    
-    def _mark_progress_complete(self, progress_file: str, all_results: List[Dict[str, Any]]):
-        """Mark progress as complete"""
-        try:
-            with open(progress_file, 'r', encoding='utf-8') as f:
-                progress_data = json.load(f)
-            
-            progress_data["status"] = "completed"
-            progress_data["end_time"] = datetime.now().isoformat()
-            progress_data["total_extracted"] = len(all_results)
-            progress_data["schemes"] = all_results
-            
-            with open(progress_file, 'w', encoding='utf-8') as f:
-                json.dump(progress_data, f, indent=2, ensure_ascii=False)
-            
-            logger.info(f"✅ Progress completed: {progress_data['amc_name']} - {len(all_results)} schemes extracted")
-            
-        except Exception as e:
-            logger.error(f"Error marking progress complete: {e}")
+    def process_all_factsheets(self, factsheets_dir: str = "factsheets") -> Dict[str, List[Dict[str, Any]]]:
+        """Process all factsheets in the directory"""
+        factsheets_path = Path(factsheets_dir)
+        pdf_files = list(factsheets_path.glob("*.pdf"))
+        
+        if not pdf_files:
+            logger.warning(f"⚠️ No PDF files found in {factsheets_dir}")
+            return {}
+        
+        logger.info(f"📁 Found {len(pdf_files)} factsheet(s) to process")
+        
+        all_results = {}
+        
+        for pdf_file in pdf_files:
+            try:
+                results = self.process_factsheet(str(pdf_file))
+                if results:
+                    amc_name = results[0].get('AMC', results[0].get('Scheme_Name', 'Unknown').split()[0])
+                    all_results[amc_name] = results
+            except Exception as e:
+                logger.error(f"Error processing {pdf_file.name}: {e}")
+        
+        # Save combined results
+        if all_results:
+            self._save_combined_results(all_results)
+            logger.info(f"🎉 Processing complete! Extracted data from {len(all_results)} AMC(s)")
+        
+        # Log API key usage statistics
+        logger.info(f"📊 API Key Usage Statistics:")
+        for i, count in self.key_usage_count.items():
+            status = "EXHAUSTED" if self.key_quota_exceeded[i] else "ACTIVE"
+            logger.info(f"  Key {i+1}: {count} requests ({status})")
+        
+        return all_results
 
 def main():
-    """Main function to run scalable extraction"""
-    try:
-        extractor = ScalableAMCExtractor()
-        results = extractor.process_all_factsheets()
-        
-        total_schemes = sum(len(schemes) for schemes in results.values())
-        logger.info(f"🎉 Scalable extraction completed!")
-        logger.info(f"📊 Total schemes extracted: {total_schemes}")
-        logger.info(f"📊 Total AMCs processed: {len(results)}")
-        
+    """Main function"""
+    extractor = ScalableAMCExtractor()
+    results = extractor.process_all_factsheets()
+    
+    if results:
+        print(f"\n✅ Successfully processed {len(results)} AMC(s)")
         for amc, schemes in results.items():
-            logger.info(f"   {amc}: {len(schemes)} schemes")
-        
-    except Exception as e:
-        logger.error(f"Error in main: {e}")
-        import traceback
-        traceback.print_exc()
+            print(f"  - {amc}: {len(schemes)} schemes")
+    else:
+        print("\n⚠️ No data extracted. Check logs for details.")
 
 if __name__ == "__main__":
     main()

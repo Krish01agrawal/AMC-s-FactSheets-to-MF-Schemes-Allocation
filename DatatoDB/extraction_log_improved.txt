@@ -1,0 +1,820 @@
+INFO:__main__:🔑 Loaded 5 API key(s) for rotation
+INFO:__main__:🔑 Using API key 1/5
+INFO:__main__:📁 Found 4 factsheet(s) to process
+INFO:__main__:🚀 Processing factsheet: HDFC MF Factsheet - August 2025.pdf
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P221' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P225' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P229' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P233' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P237' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P241' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P245' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P249' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P253' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P259' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P263' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P267' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P271' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P275' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P279' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P283' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P287' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P300' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P304' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P308' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P312' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P316' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P320' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P324' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P328' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P332' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P337' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P341' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P345' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P349' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P353' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P357' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P361' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P365' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P380' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P384' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P388' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P392' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P396' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P400' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P404' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P408' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P414' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P418' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P422' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P426' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P430' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P434' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P438' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P447' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P451' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P458' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P462' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P474' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P478' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P482' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P486' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P490' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P494' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P498' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P503' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P507' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P511' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P515' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P519' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P523' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P527' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P540' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P544' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P548' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P552' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P556' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P560' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P564' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P568' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P573' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P577' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P581' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P585' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P589' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P593' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P597' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P601' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P605' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P626' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P630' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P634' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P638' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P642' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P647' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P651' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P655' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P659' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P674' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P678' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P682' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P686' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P690' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P695' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P699' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P703' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P707' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P711' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P715' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P724' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P728' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P732' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P736' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P741' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P745' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P749' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P753' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P757' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P764' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P768' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P773' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P777' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P786' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P790' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P794' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P798' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P802' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P806' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P811' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P815' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P819' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P823' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P832' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P836' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P840' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P844' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P848' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P852' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P856' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P861' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P865' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P869' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P873' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P877' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P881' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P890' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P894' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P898' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P902' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P906' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P910' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P916' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P920' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P924' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P928' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P932' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P936' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P946' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P950' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P954' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P958' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P962' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P967' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P971' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P975' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P979' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P988' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P992' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P996' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1000' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1004' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1008' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1012' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1017' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1021' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1025' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1029' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1033' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1037' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1046' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1050' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1054' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1058' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1062' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1066' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1070' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1074' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1079' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1083' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1087' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1091' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1095' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1099' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1103' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1107' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1111' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1118' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1122' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1126' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1130' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1134' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1139' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1143' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1147' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1151' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1155' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1162' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1166' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1170' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1175' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1179' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1183' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1195' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1199' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1203' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1208' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1212' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1216' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1220' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1224' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1228' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1237' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1241' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1245' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1249' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1253' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1257' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1262' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1266' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1270' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1274' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1278' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1282' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1291' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1295' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1299' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1303' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1307' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1312' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1316' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1320' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1324' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1331' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1335' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1339' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1343' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1348' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1352' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1356' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1360' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1364' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1375' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1379' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1383' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1387' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1391' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1395' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1399' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1404' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1408' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1412' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1416' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1420' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1424' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1428' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1432' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1436' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1443' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1447' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1451' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1455' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1459' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1464' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1468' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1472' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1476' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1480' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1489' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1493' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1498' is an invalid float value
+WARNING:pdfminer.pdfinterp:Cannot set gray non-stroke color because /'P1502' is an invalid float value
+INFO:advanced_pdf_extractor:Successfully extracted text from factsheets/HDFC MF Factsheet - August 2025.pdf (127 pages)
+INFO:__main__:🏷️ Detected AMC from filename: HDFC
+INFO:__main__:🏷️ Detected AMC: HDFC
+WARNING:__main__:⚠️ No schemes found in TOC, trying minimal fallback
+INFO:__main__:📊 Minimal fallback found 0 schemes
+WARNING:__main__:⚠️ No schemes found in HDFC MF Factsheet - August 2025.pdf
+INFO:__main__:🚀 Processing factsheet: AL Scheme factsheet August_SBI.pdf
+INFO:advanced_pdf_extractor:Successfully extracted text from factsheets/AL Scheme factsheet August_SBI.pdf (107 pages)
+INFO:__main__:🏷️ Detected AMC from filename: SBI
+INFO:__main__:🏷️ Detected AMC: SBI
+INFO:__main__:📊 Found 35 schemes in Table of Contents
+INFO:__main__:🔄 Processing scheme 1/35: SBI ESG Exclusionary Strategy Fund
+INFO:__main__:💾 SBI: Saved 1 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 2/35: SBI Flexicap Fund
+INFO:__main__:💾 SBI: Saved 2 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 3/35: SBI Multicap Fund Equity - Multicap Fund
+INFO:__main__:💾 SBI: Saved 3 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 4/35: SBI Dividend Yield Fund Equity - Dividend Yield Fund
+INFO:__main__:💾 SBI: Saved 4 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 5/35: SBI Contra Fund Equity - Contra Fund
+INFO:__main__:💾 SBI: Saved 5 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 6/35: SBI Large & Midcap Fund
+INFO:__main__:💾 SBI: Saved 6 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 7/35: SBI Focused Fund
+INFO:__main__:💾 SBI: Saved 7 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 8/35: SBI Small Cap Fund
+INFO:__main__:💾 SBI: Saved 8 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 9/35: SBI ELSS Tax Saver Fund
+INFO:__main__:💾 SBI: Saved 9 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 10/35: SBI Healthcare Opportunities Fund
+INFO:__main__:💾 SBI: Saved 10 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 11/35: SBI Banking And Financial Services Fund Equity - Sectoral Fund
+INFO:__main__:💾 SBI: Saved 11 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 12/35: SBI PSU Fund Equity - Sectoral Fund
+INFO:__main__:💾 SBI: Saved 12 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 13/35: SBI Infrastructure Fund Equity - Sectoral Fund
+INFO:__main__:💾 SBI: Saved 13 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 14/35: SBI Consumption Opportunities Fund
+INFO:__main__:💾 SBI: Saved 14 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 15/35: SBI Technology Opportunities Fund
+INFO:__main__:💾 SBI: Saved 15 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 16/35: SBI Equity Hybrid Fund
+INFO:__main__:💾 SBI: Saved 16 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 17/35: SBI Conservative Hybrid Fund
+INFO:__main__:💾 SBI: Saved 17 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 18/35: SBI Multi Asset Allocation Fund
+INFO:__main__:💾 SBI: Saved 18 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 19/35: SBI Equity Savings Fund Hybrid - Equity Savings Fund
+INFO:__main__:💾 SBI: Saved 19 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 20/35: SBI Arbitrage Opportunities Fund Hybrid - Arbitrage Fund
+INFO:__main__:💾 SBI: Saved 20 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 21/35: SBI Balanced Advantage Fund Hybrid - Balanced Advantage Fund
+INFO:__main__:💾 SBI: Saved 21 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 22/35: SBI Magnum Gilt Fund
+INFO:__main__:💾 SBI: Saved 22 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 23/35: SBI Magnum Income Fund Debt - Medium To Long Duration Fund
+INFO:__main__:💾 SBI: Saved 23 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 24/35: SBI Dynamic Bond Fund Debt - Dynamic Bond Fund
+INFO:__main__:💾 SBI: Saved 24 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 25/35: SBI Corporate Bond Fund Debt - Corporate Bond Fund
+INFO:__main__:💾 SBI: Saved 25 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 26/35: SBI Credit Risk Fund
+INFO:__main__:💾 SBI: Saved 26 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 27/35: SBI Magnum Medium Duration Fund
+INFO:__main__:💾 SBI: Saved 27 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 28/35: SBI Magnum Constant Maturity Fund
+INFO:__main__:💾 SBI: Saved 28 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 29/35: SBI Magnum Low Duration Fund
+INFO:__main__:💾 SBI: Saved 29 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 30/35: SBI Savings Fund Debt - Money Market Fund
+INFO:__main__:💾 SBI: Saved 30 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 31/35: SBI Banking and PSU Fund
+INFO:__main__:💾 SBI: Saved 31 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 32/35: SBI Liquid Fund
+ERROR:__main__:Gemini extraction error for SBI Liquid Fund (attempt 1): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250
+Please retry in 14.386590113s. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 14
+}
+]
+WARNING:__main__:⚠️ Quota exceeded for API key 1
+INFO:__main__:🔑 Using API key 2/5
+INFO:__main__:🔄 Rotated to API key 2/5
+INFO:__main__:🔄 Retrying with new API key for SBI Liquid Fund
+INFO:__main__:💾 SBI: Saved 32 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 33/35: SBI Magnum Ultra Short Duration Fund
+INFO:__main__:💾 SBI: Saved 33 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 34/35: SBI Floating Rate Debt Fund Debt - Floater Fund
+INFO:__main__:💾 SBI: Saved 34 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 35/35: SBI Long Duration Fund Debt - Long Duration Fund
+INFO:__main__:💾 SBI: Saved 35 schemes to output/SBI_scalable_extraction.json
+INFO:__main__:✅ Marked SBI as processed (35 schemes)
+INFO:__main__:✅ Successfully extracted 35 schemes from SBI
+INFO:__main__:🚀 Processing factsheet: Kotak MF Factsheet August 2025.pdf
+INFO:advanced_pdf_extractor:Successfully extracted text from factsheets/Kotak MF Factsheet August 2025.pdf (168 pages)
+INFO:__main__:🏷️ Detected AMC from filename: Kotak
+INFO:__main__:🏷️ Detected AMC: Kotak
+INFO:__main__:📊 Found 25 schemes in Table of Contents
+INFO:__main__:🔄 Processing scheme 1/25: Kotak Bluechip Fund Large Cap Fund
+INFO:__main__:💾 Kotak: Saved 1 schemes to output/Kotak_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 2/25: Kotak Flexicap Fund Flexicap Fund
+INFO:__main__:💾 Kotak: Saved 2 schemes to output/Kotak_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 3/25: Kotak Multicap Fund Multicap Fund
+INFO:__main__:💾 Kotak: Saved 3 schemes to output/Kotak_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 4/25: Kotak Equity Opportunities Fund Large & Mid Cap Fund
+INFO:__main__:💾 Kotak: Saved 4 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 5/25: Kotak Emerging Equity Fund Mid Cap Fund
+INFO:__main__:💾 Kotak: Saved 5 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 6/25: Kotak Small Cap Fund Small Cap Fund
+INFO:__main__:💾 Kotak: Saved 6 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 7/25: Kotak India EQ Contra Fund Contra Fund
+INFO:__main__:💾 Kotak: Saved 7 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 8/25: Kotak Focused Equity Fund Focused Fund
+INFO:__main__:💾 Kotak: Saved 8 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 9/25: Kotak Equity Arbitrage Fund Arbitrage Fund
+INFO:__main__:💾 Kotak: Saved 9 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 10/25: Kotak Equity Hybrid Fund Aggressive Hybrid Fund
+INFO:__main__:💾 Kotak: Saved 10 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 11/25: Kotak Debt Hybrid Fund Conservative Hybrid Fund
+INFO:__main__:💾 Kotak: Saved 11 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 12/25: Kotak Overnight Fund Overnight Fund
+INFO:__main__:💾 Kotak: Saved 12 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 13/25: Kotak Liquid Fund Liquid Fund
+INFO:__main__:💾 Kotak: Saved 13 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 14/25: Kotak Savings Fund Ultra Short Duration Fund
+INFO:__main__:💾 Kotak: Saved 14 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 15/25: Kotak Money Market Fund Money Market Fund
+INFO:__main__:💾 Kotak: Saved 15 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 16/25: Kotak Low Duration Fund Low Duration Fund
+INFO:__main__:💾 Kotak: Saved 16 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 17/25: Kotak Corporate Bond Fund Corporate Bond Fund
+INFO:__main__:💾 Kotak: Saved 17 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 18/25: Kotak Bond Short Term Fund Short Duration Fund
+INFO:__main__:💾 Kotak: Saved 18 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 19/25: Kotak Credit Risk Fund Credit Risk Fund
+INFO:__main__:💾 Kotak: Saved 19 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 20/25: Kotak Floating Rate Fund Floater Fund
+INFO:__main__:💾 Kotak: Saved 20 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 21/25: Kotak Medium Term Fund Medium Duration Fund
+INFO:__main__:💾 Kotak: Saved 21 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 22/25: Kotak Banking and PSU Debt Fund Banking and PSU Fund
+INFO:__main__:💾 Kotak: Saved 22 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 23/25: Kotak Gilt Fund Gilt Fund
+INFO:__main__:💾 Kotak: Saved 23 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 24/25: Kotak Bond Fund Medium to Long Duration Fund
+INFO:__main__:💾 Kotak: Saved 24 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:🔄 Processing scheme 25/25: Kotak Long Duration Fund Long Duration Fund
+INFO:__main__:💾 Kotak: Saved 25 schemes to output/Kotak_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+ERROR:__main__:Error marking progress complete: [Errno 2] No such file or directory: 'output/Kotak_progress.json'
+INFO:__main__:✅ Marked Kotak as processed (25 schemes)
+INFO:__main__:✅ Successfully extracted 25 schemes from Kotak
+INFO:__main__:🚀 Processing factsheet: Nippon-FS-Sep-2025.pdf
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+WARNING:pdfminer.pdffont:Could get FontBBox from font descriptor because None cannot be parsed as 4 floats
+INFO:advanced_pdf_extractor:Successfully extracted text from factsheets/Nippon-FS-Sep-2025.pdf (155 pages)
+INFO:__main__:🏷️ Detected AMC from filename: Nippon
+INFO:__main__:🏷️ Detected AMC: Nippon
+INFO:__main__:📊 Found 42 schemes in Table of Contents
+INFO:__main__:🔄 Processing scheme 1/42: Nippon India Vision Large & Mid Cap Fund
+INFO:__main__:💾 Nippon: Saved 1 schemes to output/Nippon_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 2/42: Nippon India Quant Fund
+INFO:__main__:💾 Nippon: Saved 2 schemes to output/Nippon_scalable_extraction.json
+INFO:__main__:🔄 Processing scheme 3/42: Nippon India Growth Mid Cap Fund
+INFO:__main__:💾 Nippon: Saved 3 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 4/42: Nippon India Focused Fund
+INFO:__main__:💾 Nippon: Saved 4 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 5/42: Nippon India Small Cap Fund
+INFO:__main__:💾 Nippon: Saved 5 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 6/42: Nippon India Value Fund
+INFO:__main__:💾 Nippon: Saved 6 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 7/42: Nippon India Multi Cap Fund
+INFO:__main__:💾 Nippon: Saved 7 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 8/42: Nippon India Flexi Cap Fund
+INFO:__main__:💾 Nippon: Saved 8 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 9/42: Nippon India CRISIL-IBX AAA Financial Services - Dec ELSS Nippon India ELSS Tax Saver Fund
+INFO:__main__:💾 Nippon: Saved 9 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 10/42: Nippon India Banking & Financial Services Fund
+INFO:__main__:💾 Nippon: Saved 10 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 11/42: Nippon India CRISIL-IBX AAA Financial Services - Jan Sectoral Nippon India Power & Infra Fund
+INFO:__main__:💾 Nippon: Saved 11 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 12/42: Nippon India Pharma Fund
+INFO:__main__:💾 Nippon: Saved 12 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 13/42: Nippon India Consumption Fund
+INFO:__main__:💾 Nippon: Saved 13 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 14/42: Nippon India Japan Equity Fund
+INFO:__main__:💾 Nippon: Saved 14 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 15/42: Nippon India US Equity Opportunities Fund
+INFO:__main__:💾 Nippon: Saved 15 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 16/42: Nippon India Taiwan Equity Fund
+INFO:__main__:💾 Nippon: Saved 16 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 17/42: Nippon India Innovation Fund
+INFO:__main__:💾 Nippon: Saved 17 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 18/42: Nippon India Active Momentum Fund
+INFO:__main__:💾 Nippon: Saved 18 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 19/42: Nippon India MNC Fund
+INFO:__main__:💾 Nippon: Saved 19 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 20/42: Nippon India Overnight Fund
+INFO:__main__:💾 Nippon: Saved 20 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 21/42: Nippon India Liquid Fund
+ERROR:__main__:Gemini extraction error for Nippon India Liquid Fund (attempt 1): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250
+Please retry in 14.11559097s. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 14
+}
+]
+WARNING:__main__:⚠️ Quota exceeded for API key 2
+INFO:__main__:🔑 Using API key 3/5
+INFO:__main__:🔄 Rotated to API key 3/5
+INFO:__main__:🔄 Retrying with new API key for Nippon India Liquid Fund
+INFO:__main__:💾 Nippon: Saved 21 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 22/42: Nippon India Money Market Fund
+INFO:__main__:💾 Nippon: Saved 22 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 23/42: Nippon India Ultra Short Duration Fund
+INFO:__main__:💾 Nippon: Saved 23 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 24/42: Nippon India Low Duration Fund
+ERROR:__main__:Gemini extraction error for Nippon India Low Duration Fund (attempt 1): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10
+Please retry in 17.383283182s. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 17
+}
+]
+WARNING:__main__:⚠️ Quota exceeded for API key 3
+INFO:__main__:🔑 Using API key 4/5
+INFO:__main__:🔄 Rotated to API key 4/5
+INFO:__main__:🔄 Retrying with new API key for Nippon India Low Duration Fund
+INFO:__main__:💾 Nippon: Saved 24 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 25/42: Nippon India Corporate Bond Fund
+INFO:__main__:💾 Nippon: Saved 25 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 26/42: Nippon India Banking and PSU Fund
+INFO:__main__:💾 Nippon: Saved 26 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 27/42: Nippon India Floater Fund
+INFO:__main__:💾 Nippon: Saved 27 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 28/42: Nippon India Short Duration Fund
+INFO:__main__:💾 Nippon: Saved 28 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 29/42: Nippon India Nivesh Lakshya Long Duration Fund
+INFO:__main__:💾 Nippon: Saved 29 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 30/42: Nippon India Medium to Long Duration Fund
+INFO:__main__:💾 Nippon: Saved 30 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 31/42: Nippon India Dynamic Bond Fund
+INFO:__main__:💾 Nippon: Saved 31 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 32/42: Nippon India Gilt Fund
+INFO:__main__:💾 Nippon: Saved 32 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 33/42: Nippon India Balanced Advantage Fund
+INFO:__main__:💾 Nippon: Saved 33 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 34/42: Nippon India Gold Savings Fund
+INFO:__main__:💾 Nippon: Saved 34 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 35/42: Nippon India Arbitrage Fund
+INFO:__main__:💾 Nippon: Saved 35 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 36/42: Nippon India Income Plus Arbitrage Active Fund of Fund
+INFO:__main__:💾 Nippon: Saved 36 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 37/42: Nippon India Multi Asset Allocation Fund
+INFO:__main__:💾 Nippon: Saved 37 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 38/42: Nippon India Nifty Bank Index Fund
+INFO:__main__:💾 Nippon: Saved 38 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 39/42: Nippon India Nifty IT Index Fund
+INFO:__main__:💾 Nippon: Saved 39 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 40/42: Nippon India Nifty Auto Index Fund
+INFO:__main__:💾 Nippon: Saved 40 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 41/42: Nippon India Nifty Realty Index Fund
+INFO:__main__:💾 Nippon: Saved 41 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:🔄 Processing scheme 42/42: Nippon India Nifty India Manufacturing Index Fund
+INFO:__main__:💾 Nippon: Saved 42 schemes to output/Nippon_scalable_extraction.json
+ERROR:__main__:Error updating progress file: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+ERROR:__main__:Error marking progress complete: [Errno 2] No such file or directory: 'output/Nippon_progress.json'
+INFO:__main__:✅ Marked Nippon as processed (42 schemes)
+INFO:__main__:✅ Successfully extracted 42 schemes from Nippon
+INFO:__main__:💾 Combined results saved to: output/scalable_extraction_all_amcs.json
+INFO:__main__:🎉 Processing complete! Extracted data from 3 AMC(s)
+INFO:__main__:📊 API Key Usage Statistics:
+INFO:__main__:  Key 1: 31 requests (EXHAUSTED)
+INFO:__main__:  Key 2: 49 requests (EXHAUSTED)
+INFO:__main__:  Key 3: 3 requests (EXHAUSTED)
+INFO:__main__:  Key 4: 19 requests (ACTIVE)
+INFO:__main__:  Key 5: 0 requests (ACTIVE)
+
+✅ Successfully processed 3 AMC(s)
+  - SBI: 35 schemes
+  - Kotak: 25 schemes
+  - Nippon: 42 schemes

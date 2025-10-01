@@ -21,6 +21,8 @@ python3 demo_analysis.py
 
 
 
+rm -f output/*.json
+
 
 
 # Main scalable processing
