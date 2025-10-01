@@ -1,0 +1,1427 @@
+[
+  {
+    "Scheme_Name": "Kotak Bluechip Fund Large Cap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Large Cap Fund",
+    "Type_of_Scheme": "Open-Ended Equity Scheme",
+    "Date_of_Allotment_(Inception_Date)": "29/12/1998",
+    "AUM_(as_of_Aug_2025)": "₹10,235.05 Crs",
+    "Fund_Manager_Name": "Mr. Rohit Tandon",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty 100 TRI",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.61%",
+      "Regular": "1.74%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "12.13%",
+      "Beta": "0.93",
+      "Sharpe_Ratio": "0.68"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "29.15",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "82.72",
+      "Mid_Cap_(%)": "9.00",
+      "Small_Cap_(%)": "4.88",
+      "Other_Assets_(%)": "3.40"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹559.5580",
+      "Regular_IDCW": "₹72.2300",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "1% of the units or NIL",
+      "30_-_90_days": "1% of the units or NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "VERY HIGH",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "N/A",
+      "Modified_Duration": "N/A",
+      "Average_Maturity_Years": "N/A",
+      "Macaulay_Duration": "N/A",
+      "Composition_by_rating": "N/A"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Flexicap Fund Flexicap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Flexicap Fund",
+    "Type_of_Scheme": "Open-Ended Dynamic Equity Scheme",
+    "Date_of_Allotment_(Inception_Date)": "11/09/2009",
+    "AUM_(as_of_Aug_2025)": "₹53,625.83 Crs",
+    "Fund_Manager_Name": "Mr. Harsha Upadhyaya",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Nifty 500 TRI",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.59%",
+      "Regular": "1.44%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "12.91%",
+      "Beta": "0.93",
+      "Sharpe_Ratio": "0.74"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "7.59",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "73.28",
+      "Mid_Cap_(%)": "17.44",
+      "Small_Cap_(%)": "4.98",
+      "Other_Assets_(%)": "4.30"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹82.5180",
+      "Regular_IDCW": "₹49.8280",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "1% of the units or NIL",
+      "30_-_90_days": "1% of the units or NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "VERY HIGH",
+    "CAGR": {
+      "1Y": "5.14%",
+      "3Y": "14.32%",
+      "5Y": "15.01%",
+      "All": "14.89%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "N/A",
+      "Modified_Duration": "N/A",
+      "Average_Maturity_Years": "N/A",
+      "Macaulay_Duration": "N/A",
+      "Composition_by_rating": "N/A"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Multicap Fund Multicap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Multi Cap Fund",
+    "Type_of_Scheme": "Open-Ended Equity Scheme",
+    "Date_of_Allotment_(Inception_Date)": "29/09/2021",
+    "AUM_(as_of_Aug_2025)": "₹19,227.04 Crs",
+    "Fund_Manager_Name": "Mr. Devender Singhal & Mr. Abhishek Bisen",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty 500 Multicap 50:25:25 TRI",
+    "Options": "Regular (Growth, IDCW)",
+    "Expense_Ratio": {
+      "Direct": "0.42%",
+      "Regular": "1.62%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "15.29%",
+      "Beta": "1.03",
+      "Sharpe_Ratio": "0.91"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "39.20%",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "39.07",
+      "Mid_Cap_(%)": "31.34",
+      "Small_Cap_(%)": "28.63",
+      "Other_Assets_(%)": "0.96"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹18.5870",
+      "Regular_IDCW": "₹18.5870",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "1% of the units or NIL",
+      "30_-_90_days": "1% of the units or NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "VERY HIGH",
+    "CAGR": {
+      "1Y": "2.63%",
+      "3Y": "18.72%",
+      "5Y": "N/A",
+      "All": "19.63%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "N/A",
+      "Modified_Duration": "N/A",
+      "Average_Maturity_Years": "N/A",
+      "Macaulay_Duration": "N/A",
+      "Composition_by_rating": "N/A"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Equity Opportunities Fund Large & Mid Cap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Large & Mid Cap Fund",
+    "Type_of_Scheme": "Open-Ended Equity Scheme",
+    "Date_of_Allotment_(Inception_Date)": "09/09/2004",
+    "AUM_(as_of_Aug_2025)": "₹27,654.67 Crs",
+    "Fund_Manager_Name": "Mr. Harsha Upadhyaya",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "NIFTY Large Midcap 250 TRI",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.53%",
+      "Regular": "1.58%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "13.00%",
+      "Beta": "0.90",
+      "Sharpe_Ratio": "0.88"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "15.40",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "52.85",
+      "Mid_Cap_(%)": "40.25",
+      "Small_Cap_(%)": "5.58",
+      "Other_Assets_(%)": "1.32"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹332.1940",
+      "Regular_IDCW": "₹57.9550",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "1% of the units or NIL",
+      "30_-_90_days": "1% of the units or NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "VERY HIGH",
+    "CAGR": {
+      "1Y": "3.04%",
+      "3Y": "15.52%",
+      "5Y": "17.29%",
+      "All": "15.60%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "N/A",
+      "Modified_Duration": "N/A",
+      "Average_Maturity_Years": "N/A",
+      "Macaulay_Duration": "N/A",
+      "Composition_by_rating": "N/A"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Emerging Equity Fund Mid Cap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Mid Cap Fund",
+    "Type_of_Scheme": "Open-Ended Equity Scheme",
+    "Date_of_Allotment_(Inception_Date)": "30/03/2007",
+    "AUM_(as_of_Aug_2025)": "₹56,988.32 Crs",
+    "Fund_Manager_Name": "Mr. Atul Bhole",
+    "Fund_Manager_Tenure": "N/A (Only tenure/managing since date available)",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "NIFTY Midcap 150 TRI",
+    "Options": "Growth, IDCW",
+    "Expense_Ratio": {
+      "Direct": "0.37%",
+      "Regular": "1.40%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "15.11%",
+      "Beta": "0.89",
+      "Sharpe_Ratio": "0.95"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "32.82",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "14.06",
+      "Mid_Cap_(%)": "69.16",
+      "Small_Cap_(%)": "14.66",
+      "Other_Assets_(%)": "2.12"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹133.8610",
+      "Regular_IDCW": "₹73.5200",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "1% of the units (if in excess of 10% of initial investment amount within 1 year), else NIL",
+      "30_-_90_days": "1% of the units (if in excess of 10% of initial investment amount within 1 year), else NIL",
+      "After_90_days": "NIL (if on or after 1 year from date of allotment)"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "VERY HIGH",
+    "CAGR": {
+      "1Y": "9.55%",
+      "3Y": "20.65%",
+      "5Y": "21.57%",
+      "All": "18.39%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "N/A",
+      "Modified_Duration": "N/A",
+      "Average_Maturity_Years": "N/A",
+      "Macaulay_Duration": "N/A",
+      "Composition_by_rating": "N/A"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Small Cap Fund Small Cap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Small Cap Fund",
+    "Type_of_Scheme": "Open-Ended Equity Scheme",
+    "Date_of_Allotment_(Inception_Date)": "24/02/2005",
+    "AUM_(as_of_Aug_2025)": "₹17,508.37 Crs",
+    "Fund_Manager_Name": "Mr. Harish Bihani",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "NIFTY Smallcap 250 TRI",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.52%",
+      "Regular": "1.64%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "16.59%",
+      "Beta": "0.80",
+      "Sharpe_Ratio": "0.61"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "22.18",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "7.41",
+      "Mid_Cap_(%)": "15.19",
+      "Small_Cap_(%)": "76.68",
+      "Other_Assets_(%)": "0.72"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹255.4750",
+      "Regular_IDCW": "₹111.4550",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "1% of the units or NIL",
+      "30_-_90_days": "1% of the units or NIL",
+      "After_90_days": "1% of the units or NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "VERY HIGH",
+    "CAGR": {
+      "1Y": "-2.20%",
+      "3Y": "13.29%",
+      "5Y": "17.28%",
+      "All": "17.08%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "N/A",
+      "Modified_Duration": "N/A",
+      "Average_Maturity_Years": "N/A",
+      "Macaulay_Duration": "N/A",
+      "Composition_by_rating": "N/A"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak India EQ Contra Fund Contra Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Contra Fund",
+    "Type_of_Scheme": "Open-Ended Equity Scheme",
+    "Date_of_Allotment_(Inception_Date)": "27/07/2005",
+    "AUM_(as_of_Aug_2025)": "₹4,493.36 Crs",
+    "Fund_Manager_Name": "Ms. Shibani Sircar Kurian",
+    "Fund_Manager_Tenure": "N/A (Only tenure/managing since date available)",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty 500 TRI",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.57%",
+      "Regular": "1.86%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "13.59%",
+      "Beta": "0.99",
+      "Sharpe_Ratio": "1.01"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "37.07",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "55.49",
+      "Mid_Cap_(%)": "28.57",
+      "Small_Cap_(%)": "14.87",
+      "Other_Assets_(%)": "1.07"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹147.1100",
+      "Regular_IDCW": "₹50.7080",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "1.00% of the units",
+      "30_-_90_days": "1.00% of the units",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "VERY HIGH",
+    "CAGR": {
+      "1Y": "3.11%",
+      "3Y": "17.29%",
+      "5Y": "18.72%",
+      "All": "14.65%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "N/A",
+      "Modified_Duration": "N/A",
+      "Average_Maturity_Years": "N/A",
+      "Macaulay_Duration": "N/A",
+      "Composition_by_rating": "N/A"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Focused Equity Fund Focused Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Focused Fund",
+    "Type_of_Scheme": "Open-Ended Equity Scheme",
+    "Date_of_Allotment_(Inception_Date)": "16/07/2019",
+    "AUM_(as_of_Aug_2025)": "₹3,636.23 Crs",
+    "Fund_Manager_Name": "Ms. Shibani Sircar Kurian",
+    "Fund_Manager_Tenure": "N/A (Only tenure/managing since date available)",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty 500 TRI",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.55%",
+      "Regular": "1.89%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "12.24%",
+      "Beta": "0.89",
+      "Sharpe_Ratio": "0.74"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "24.35",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "72.29",
+      "Mid_Cap_(%)": "22.68",
+      "Small_Cap_(%)": "2.10",
+      "Other_Assets_(%)": "2.93"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹25.0140",
+      "Regular_IDCW": "₹25.0140",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "1% of the units or NIL",
+      "30_-_90_days": "1% of the units or NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "VERY HIGH",
+    "CAGR": {
+      "1Y": "7.52%",
+      "3Y": "14.69%",
+      "5Y": "15.06%",
+      "All": "16.36%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "N/A",
+      "Modified_Duration": "N/A",
+      "Average_Maturity_Years": "N/A",
+      "Macaulay_Duration": "N/A",
+      "Composition_by_rating": "N/A"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Equity Arbitrage Fund Arbitrage Fund",
+    "Asset_Class": "Hybrid",
+    "Sub_Class": "Arbitrage Fund",
+    "Type_of_Scheme": "Open-Ended Hybrid Scheme",
+    "Date_of_Allotment_(Inception_Date)": "29/09/2005",
+    "AUM_(as_of_Aug_2025)": "₹72,273.57 Crs",
+    "Fund_Manager_Name": "Mr. Hiten Shah",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty 50 Arbitrage TRI",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.44%",
+      "Regular": "1.05%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "0.43%",
+      "Beta": "0.61",
+      "Sharpe_Ratio": "3.34"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "558.15",
+      "Total_Turnover": "1852.16"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "-0.21",
+      "Mid_Cap_(%)": "-0.18",
+      "Small_Cap_(%)": "0.04",
+      "Other_Assets_(%)": "100.35"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹37.8154",
+      "Regular_IDCW": "₹10.7200",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "0.25% of the units",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "LOW",
+    "CAGR": {
+      "1Y": "6.58%",
+      "3Y": "7.23%",
+      "5Y": "6.63%",
+      "All": "6.60%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "6.01%",
+      "Modified_Duration": "0.44 Years",
+      "Average_Maturity_Years": "0.44 Years",
+      "Macaulay_Duration": "0.44 Years",
+      "Composition_by_rating": "N/A"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Equity Hybrid Fund Aggressive Hybrid Fund",
+    "Asset_Class": "Hybrid",
+    "Sub_Class": "Aggressive Hybrid Fund",
+    "Type_of_Scheme": "Open-Ended Hybrid Scheme",
+    "Date_of_Allotment_(Inception_Date)": "25/11/1999",
+    "AUM_(as_of_Aug_2025)": "₹7,853.42 Crs",
+    "Fund_Manager_Name": "Mr. Atul Bhole & Mr. Abhishek Bisen",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty 50 Hybrid Composite Debt 65:35 Index TRI",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.47%",
+      "Regular": "1.75%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "10.49%",
+      "Beta": "1.13",
+      "Sharpe_Ratio": "0.79"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "26.37",
+      "Total_Turnover": "68.42"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "46.85",
+      "Mid_Cap_(%)": "20.97",
+      "Small_Cap_(%)": "9.12",
+      "Other_Assets_(%)": "23.06"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹61.3640",
+      "Regular_IDCW": "₹36.0630",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "VERY HIGH",
+    "CAGR": {
+      "1Y": "4.71%",
+      "3Y": "13.66%",
+      "5Y": "14.54%",
+      "All": "13.78%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "7.14%",
+      "Modified_Duration": "9.08 Years",
+      "Average_Maturity_Years": "23.69 Years",
+      "Macaulay_Duration": "9.42 Years",
+      "Composition_by_rating": "AAA/Sovereign (18.78%), AA (0.82%), Others (4.03%)"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Debt Hybrid Fund Conservative Hybrid Fund",
+    "Asset_Class": "Hybrid",
+    "Sub_Class": "Conservative Hybrid Fund",
+    "Type_of_Scheme": "Open-Ended Hybrid Scheme",
+    "Date_of_Allotment_(Inception_Date)": "02/12/2003",
+    "AUM_(as_of_Aug_2025)": "₹3,065.45 Crs",
+    "Fund_Manager_Name": "Ms. Shibani Sircar Kurian & Mr. Abhishek Bisen",
+    "Fund_Manager_Tenure": "N/A (Only tenure/managing since date available)",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "CRISIL Hybrid 85+15- Conservative Index TRI",
+    "Options": "Regular (Payout of IDCW, Reinvestment of IDCW, Growth), Direct (Payout of IDCW, Reinvestment of IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.48%",
+      "Regular": "1.66%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "5.66%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "15.51",
+      "Mid_Cap_(%)": "4.23",
+      "Small_Cap_(%)": "2.25",
+      "Other_Assets_(%)": "78.01"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹57.5516",
+      "Regular_IDCW": "₹12.6233",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "MODERATE",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "7.29%",
+      "Modified_Duration": "8.21 Years",
+      "Average_Maturity_Years": "21.60 Years",
+      "Macaulay_Duration": "8.53 Years",
+      "Composition_by_rating": "AAA/Sovereign (62.50%), AA (3.97%), Others (11.54%)"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Overnight Fund Overnight Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Overnight Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "15/01/2019",
+    "AUM_(as_of_Aug_2025)": "₹7,177.46 Crs",
+    "Fund_Manager_Name": "Mr. Deepak Agrawal, Mr. Sunil Pandey",
+    "Fund_Manager_Tenure": "Since June 2025",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "NIFTY 1D Rate index",
+    "Options": "Growth, Reinvestment of IDCW",
+    "Expense_Ratio": {
+      "Direct": "0.08%",
+      "Regular": "0.16%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "0.14%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹1385.5837",
+      "Regular_IDCW": "₹1004.7568",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "LOW",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "5.44%",
+      "Modified_Duration": "0.00 Years",
+      "Average_Maturity_Years": "0.00 Years",
+      "Macaulay_Duration": "0.00 Years",
+      "Composition_by_rating": "Sovereign (1.74%), Others (98.26%)"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Liquid Fund Liquid Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Liquid Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "04/11/2003",
+    "AUM_(as_of_Aug_2025)": "₹40,674.68 Crs",
+    "Fund_Manager_Name": "Mr. Deepak Agrawal & Mr. Sunil Pandey",
+    "Fund_Manager_Tenure": "Since June 2025",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty Liquid Index A-I",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.20%",
+      "Regular": "0.31%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "0.18%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹5328.3848",
+      "Regular_IDCW": "₹1222.8100",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "0.0070%",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "MODERATE",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "5.94%",
+      "Modified_Duration": "0.11 Years",
+      "Average_Maturity_Years": "0.11 Years",
+      "Macaulay_Duration": "0.11 Years",
+      "Composition_by_rating": "AAA/Sovereign (17.99%), AA (0%), Others (83.65%)"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Savings Fund Ultra Short Duration Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Ultra Short Duration Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "13/08/2004",
+    "AUM_(as_of_Aug_2025)": "₹15,667.19 Crs",
+    "Fund_Manager_Name": "Mr. Deepak Agrawal, Mr. Manu Sharma",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty Ultra Short Duration Debt Index A-I",
+    "Options": "Reinvestment of IDCW, Growth",
+    "Expense_Ratio": {
+      "Direct": "0.37%",
+      "Regular": "0.83%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "0.36%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹43.3175",
+      "Regular_IDCW": "₹10.7379",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "MODERATE",
+    "CAGR": {
+      "1Y": "7.12%",
+      "3Y": "7.11%",
+      "5Y": "6.41%",
+      "All": "7.10%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "6.41%",
+      "Modified_Duration": "0.44 Years",
+      "Average_Maturity_Years": "0.48 Years",
+      "Macaulay_Duration": "0.46 Years",
+      "Composition_by_rating": "AAA/Sovereign (87.02%), AA (9.09%), Others (3.89%)"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Money Market Fund Money Market Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Money Market Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "14/07/2003",
+    "AUM_(as_of_Aug_2025)": "₹27,977.01 Crs",
+    "Fund_Manager_Name": "Mr. Deepak Agrawal, Mr. Manu Sharma",
+    "Fund_Manager_Tenure": "N/A (Only tenure/managing since date available)",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "CRISIL Money Market A-I Index",
+    "Options": "Regular (IDCW, Growth), Direct (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.24%",
+      "Regular": "0.36%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "0.44%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹4547.5261",
+      "Regular_IDCW": "₹1054.5154",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "LOW TO MODERATE",
+    "CAGR": {
+      "1Y": "7.79%",
+      "3Y": "7.69%",
+      "5Y": "6.94%",
+      "All": "7.18%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "6.23%",
+      "Modified_Duration": "0.46 Years",
+      "Average_Maturity_Years": "0.47 Years",
+      "Macaulay_Duration": "0.47 Years",
+      "Composition_by_rating": "AAA/Sovereign (100.79%), AA (N/A), Others (N/A)"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Low Duration Fund Low Duration Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Low Duration Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "06/03/2008",
+    "AUM_(as_of_Aug_2025)": "₹13,644.30 Crs",
+    "Fund_Manager_Name": "Mr. Deepak Agrawal, Mr. Sunit Garg",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty Low Duration Debt Index A-I",
+    "Options": "Regular (Growth, IDCW)",
+    "Expense_Ratio": {
+      "Direct": "N/A",
+      "Regular": "N/A"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "N/A",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹3379.3144",
+      "Regular_IDCW": "₹1288.0987",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "HIGH",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "N/A",
+      "Modified_Duration": "N/A",
+      "Average_Maturity_Years": "N/A",
+      "Macaulay_Duration": "N/A",
+      "Composition_by_rating": "AAA/Sovereign (71.05%), AA (19.46%), Others (9.49%)"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Corporate Bond Fund Corporate Bond Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Corporate Bond Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "21/09/2007",
+    "AUM_(as_of_Aug_2025)": "₹17,612.03 Crs",
+    "Fund_Manager_Name": "Mr. Deepak Agrawal & Mr. Manu Sharma",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty Corporate Bond Index A-II",
+    "Options": "Growth, Payout of IDCW, Reinvestment of IDCW",
+    "Expense_Ratio": {
+      "Direct": "0.34%",
+      "Regular": "0.68%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "1.63%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹3805.4211",
+      "Regular_IDCW": "₹1239.6594",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "MODERATE",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "7.01%",
+      "Modified_Duration": "3.25 Years",
+      "Average_Maturity_Years": "5.10 Years",
+      "Macaulay_Duration": "3.43 Years",
+      "Composition_by_rating": "AAA/Sovereign (87.80%), AA (12.09%), Others (0.11%)"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Bond Short Term Fund Short Duration Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Short Duration Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "02/05/2002",
+    "AUM_(as_of_Aug_2025)": "₹18,229.73 Crs",
+    "Fund_Manager_Name": "Mr. Deepak Agrawal, Mr. Abhishek Bisen",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty Short Duration Debt Index A-II",
+    "Options": "Regular (Growth, IDCW)",
+    "Expense_Ratio": {
+      "Direct": "N/A",
+      "Regular": "N/A"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "1.63%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹52.5306",
+      "Regular_IDCW": "₹1239.6594",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "MODERATE",
+    "CAGR": {
+      "1Y": "7.53%",
+      "3Y": "7.94%",
+      "5Y": "6.97%",
+      "All": "7.59%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "7.01%",
+      "Modified_Duration": "3.25 Years",
+      "Average_Maturity_Years": "5.10 Years",
+      "Macaulay_Duration": "3.43 Years",
+      "Composition_by_rating": "N/A"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Credit Risk Fund Credit Risk Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Credit Risk Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "11/05/2010",
+    "AUM_(as_of_Aug_2025)": "₹709.25 Crs",
+    "Fund_Manager_Name": "Mr. Deepak Agrawal, Mr. Sunit Garg",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "CRISIL Credit Risk Debt B-II Index",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.81%",
+      "Regular": "1.71%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "1.68%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹29.7891",
+      "Regular_IDCW": "₹12.9549",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "1% of the units",
+      "30_-_90_days": "1% of the units",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "HIGH",
+    "CAGR": {
+      "1Y": "8.22%",
+      "3Y": "7.68%",
+      "5Y": "6.41%",
+      "All": "6.99%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "8.03%",
+      "Modified_Duration": "2.41 Years",
+      "Average_Maturity_Years": "3.01 Years",
+      "Macaulay_Duration": "2.55 Years",
+      "Composition_by_rating": "AAA/Sovereign (52.63%), AA (20.17%), Others (13.67%)"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Floating Rate Fund Floater Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Floating Rate Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "14/05/2019",
+    "AUM_(as_of_Aug_2025)": "₹3,081.00 Crs",
+    "Fund_Manager_Name": "Mr. Deepak Agrawal, Mr. Manu Sharma",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty Short Duration Debt Index A-II",
+    "Options": "Regular (Growth, IDCW)",
+    "Expense_Ratio": {
+      "Direct": "0.25%",
+      "Regular": "0.63%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "0.99%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹1530.9120",
+      "Regular_IDCW": "₹1364.3701",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "MODERATELY HIGH",
+    "CAGR": {
+      "1Y": "4.14%",
+      "3Y": "7.57%",
+      "5Y": "8.51%",
+      "All": "9.20%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "7.09%",
+      "Modified_Duration": "1.82 Years",
+      "Average_Maturity_Years": "4.78 Years",
+      "Macaulay_Duration": "1.92 Years",
+      "Composition_by_rating": "AAA/Sovereign (90.43%), AA (14.35%), Others (N/A)"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Medium Term Fund Medium Duration Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Medium Duration Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "21/03/2014",
+    "AUM_(as_of_Aug_2025)": "₹1,832.10 Crs",
+    "Fund_Manager_Name": "Mr. Deepak Agrawal, Mr. Vihag Mishra",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "CRISIL Medium Duration Debt A-III Index",
+    "Options": "Regular (Growth, IDCW), Direct (Growth, IDCW)",
+    "Expense_Ratio": {
+      "Direct": "N/A",
+      "Regular": "N/A"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "N/A",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹22.9284",
+      "Regular_IDCW": "₹14.0731",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "MODERATELY HIGH",
+    "CAGR": {
+      "1Y": "7.65%",
+      "3Y": "6.96%",
+      "5Y": "7.29%",
+      "All": "7.90%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "N/A",
+      "Modified_Duration": "N/A",
+      "Average_Maturity_Years": "N/A",
+      "Macaulay_Duration": "N/A",
+      "Composition_by_rating": "N/A"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Banking and PSU Debt Fund Banking and PSU Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Banking and PSU Debt Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "29/12/1998",
+    "AUM_(as_of_Aug_2025)": "₹5,794.84 Crs",
+    "Fund_Manager_Name": "Mr. Deepak Agrawal",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "CRISIL Banking & PSU Debt A-II Index",
+    "Options": "Regular (Growth, Payout of IDCW, Reinvestment of IDCW)",
+    "Expense_Ratio": {
+      "Direct": "0.40%",
+      "Regular": "0.75%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "1.76%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹65.8476",
+      "Regular_IDCW": "₹12.3712",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "MODERATE",
+    "CAGR": {
+      "1Y": "7.03%",
+      "3Y": "7.62%",
+      "5Y": "6.78%",
+      "All": "7.17%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "7.02%",
+      "Modified_Duration": "3.36 Years",
+      "Average_Maturity_Years": "5.63 Years",
+      "Macaulay_Duration": "3.57 Years",
+      "Composition_by_rating": "AAA/Sovereign (93.98%), AA (2.52%), Others (3.50%)"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Gilt Fund Gilt Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Gilt Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "29/12/1998",
+    "AUM_(as_of_Aug_2025)": "₹3,572.00 Crs",
+    "Fund_Manager_Name": "Mr. Abhishek Bisen",
+    "Fund_Manager_Tenure": "N/A (Only tenure/managing since date available)",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty AII Duration G-Sec Index",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.47%",
+      "Regular": "1.48%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "5.66%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹95.66",
+      "Regular_IDCW": "₹18.69",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "MODERATE",
+    "CAGR": {
+      "1Y": "-2.20%",
+      "3Y": "4.52%",
+      "5Y": "4.79%",
+      "All": "7.72%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "7.38%",
+      "Modified_Duration": "11.51 Years",
+      "Average_Maturity_Years": "30.55 Years",
+      "Macaulay_Duration": "11.93 Years",
+      "Composition_by_rating": "AAA/Sovereign (97.07%), Others (4.08%)"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Bond Fund Medium to Long Duration Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Medium to Long Duration Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "25/11/1999",
+    "AUM_(as_of_Aug_2025)": "₹2,129.67 Crs",
+    "Fund_Manager_Name": "Mr. Abhishek Bisen",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "CRISIL Medium to Long Duration Debt A-III Index",
+    "Options": "Growth, IDCW",
+    "Expense_Ratio": {
+      "Direct": "0.70%",
+      "Regular": "1.66%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "3.18%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹76.1193",
+      "Regular_IDCW": "₹46.6360",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "MODERATE",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "6.96%",
+      "Modified_Duration": "6.68 Years",
+      "Average_Maturity_Years": "13.30 Years",
+      "Macaulay_Duration": "6.94 Years",
+      "Composition_by_rating": "AAA/Sovereign (93.13%), AA (N/A), Others (N/A)"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Long Duration Fund Long Duration Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Long Duration Debt Fund",
+    "Type_of_Scheme": "Open-Ended Debt Scheme",
+    "Date_of_Allotment_(Inception_Date)": "29/12/1998",
+    "AUM_(as_of_Aug_2025)": "₹3,572.00 Crs",
+    "Fund_Manager_Name": "Mr. Abhishek Bisen",
+    "Fund_Manager_Tenure": "N/A (Only tenure/managing since date available)",
+    "Fund_Manager_Experience": "N/A (Only tenure/managing since date available)",
+    "Benchmark": "Nifty All Duration G-Sec Index",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.47%",
+      "Regular": "1.48%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "5.66%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹95.6600",
+      "Regular_IDCW": "₹18.6900",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "MODERATE",
+    "CAGR": {
+      "1Y": "-2.20%",
+      "3Y": "4.52%",
+      "5Y": "4.79%",
+      "All": "7.72%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "7.38%",
+      "Modified_Duration": "11.51 Years",
+      "Average_Maturity_Years": "30.55 Years",
+      "Macaulay_Duration": "11.93 Years",
+      "Composition_by_rating": "AAA/Sovereign (97.07%), Others (2.93%)"
+    }
+  }
+]
