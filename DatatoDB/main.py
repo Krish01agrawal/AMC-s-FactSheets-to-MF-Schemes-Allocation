@@ -10,7 +10,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Any
 
-from scalable_amc_extractor import ScalableAMCExtractor
+from final_optimized_extractor import FinalOptimizedExtractor
 from advanced_mongodb_interface import AdvancedMongoDBInterface
 from analysis_engine import FactsheetAnalysisEngine
 import config
@@ -31,7 +31,7 @@ class PlutoMoneyFactsheetProcessor:
     
     def __init__(self):
         """Initialize the scalable processor"""
-        self.extractor = ScalableAMCExtractor()
+        self.extractor = FinalOptimizedExtractor()
         self.db_interface = None
         self.analysis_engine = None
         
@@ -80,8 +80,13 @@ class PlutoMoneyFactsheetProcessor:
         self.stats['total_files'] = len(pdf_files)
         logger.info(f"📁 Found {len(pdf_files)} PDF files")
         
-        # Process using scalable extractor
-        all_schemes_by_amc = self.extractor.process_all_factsheets("factsheets")
+        # Process using final optimized extractor
+        all_schemes_by_amc = {}
+        for pdf_file in pdf_files:
+            amc_name = pdf_file.stem.split('_')[0] if '_' in pdf_file.stem else pdf_file.stem
+            result = self.extractor.process_pdf(str(pdf_file))
+            if result and result.get('schemes'):
+                all_schemes_by_amc[amc_name] = result['schemes']
         
         if not all_schemes_by_amc:
             logger.info("ℹ️ No new files to process (all already processed)")
