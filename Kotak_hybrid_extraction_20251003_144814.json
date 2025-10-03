@@ -1,0 +1,2123 @@
+[
+  {
+    "Scheme_Name": "Kotak Bluechip Fund Large Cap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Large Cap",
+    "Type_of_Scheme": "N/A",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "N/A",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "N/A",
+    "Options": "N/A",
+    "Expense_Ratio": {
+      "Direct": "N/A",
+      "Regular": "N/A"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "N/A",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "llm",
+      "confidence": 8.57,
+      "extraction_time": 6.5558178424835205,
+      "timestamp": "2025-10-03T14:48:14.738489"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Flexicap Fund Flexicap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Flexicap",
+    "Type_of_Scheme": "Open-ended equity scheme",
+    "Date_of_Allotment_(Inception_Date)": "29/12/1998",
+    "AUM_(as_of_Aug_2025)": "₹10,235.05 Crs",
+    "Fund_Manager_Name": "Mr. Rohit Tandon",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Nifty 100 TRI (Tier 1)",
+    "Options": "Growth, IDCW",
+    "Expense_Ratio": {
+      "Direct": "0.61%",
+      "Regular": "1.74%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "12.13%",
+      "Beta": "0.93",
+      "Sharpe_Ratio": "0.68"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "29.15",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "82.72",
+      "Mid_Cap_(%)": "9.00",
+      "Small_Cap_(%)": "4.88",
+      "Other_Assets_(%)": "3.40"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹559.5580",
+      "Regular_IDCW": "₹72.2300",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "1%",
+      "30_-_90_days": "N/A",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "VERY HIGH",
+    "CAGR": {
+      "1Y": "2.97%",
+      "3Y": "12.96%",
+      "5Y": "13.86%",
+      "All": "14.72%"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "llm",
+      "confidence": 82.86,
+      "extraction_time": 7.477833986282349,
+      "timestamp": "2025-10-03T14:48:14.738528"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Multicap Fund Multicap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Large Cap/Mid Cap/Small Cap",
+    "Type_of_Scheme": "An open-ended dynamic equity scheme investing across Large large cap, mid cap, small cap stocks",
+    "Date_of_Allotment_(Inception_Date)": "11/09/2009",
+    "AUM_(as_of_Aug_2025)": "₹53,625.83 Crs",
+    "Fund_Manager_Name": "Mr. Harsha Upadhyaya",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Nifty 500 TRI",
+    "Options": "Growth & IDCW",
+    "Expense_Ratio": {
+      "Direct": "0.59%",
+      "Regular": "1.44%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "12.91%",
+      "Beta": "0.93",
+      "Sharpe_Ratio": "0.74"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "7.59",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "73.28",
+      "Mid_Cap_(%)": "17.44",
+      "Small_Cap_(%)": "4.98",
+      "Other_Assets_(%)": "4.30"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹82.5180",
+      "Regular_IDCW": "₹49.8280",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "N/A",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "VERY HIGH",
+    "CAGR": {
+      "1Y": "5.14%",
+      "3Y": "15.01%",
+      "5Y": "15.54%",
+      "All": "14.89%"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "llm",
+      "confidence": 82.86,
+      "extraction_time": 7.358448028564453,
+      "timestamp": "2025-10-03T14:48:14.738561"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Equity Opportunities Fund Large & Mid Cap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Large & Mid Cap",
+    "Type_of_Scheme": "Open-Ended Equity Scheme",
+    "Date_of_Allotment_(Inception_Date)": "29/09/2021",
+    "AUM_(as_of_Aug_2025)": "₹19,227.04 Crs",
+    "Fund_Manager_Name": "Mr. Devender Singhal & Mr. Abhishek Bisen",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Nifty 500 Multicap 50:25:25 TRI",
+    "Options": "Growth and Income Distribution cum capital withdrawal (IDCW) (Payout and Reinvestment)",
+    "Expense_Ratio": {
+      "Direct": "0.42%",
+      "Regular": "1.62%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "15.29%",
+      "Beta": "1.03",
+      "Sharpe_Ratio": "1.01"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "39.20",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "39.07",
+      "Mid_Cap_(%)": "31.34",
+      "Small_Cap_(%)": "28.63",
+      "Other_Assets_(%)": "0.96"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹18.5870",
+      "Regular_IDCW": "₹18.5870",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "N/A",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "VERY HIGH",
+    "CAGR": {
+      "1Y": "2.63%",
+      "3Y": "18.72%",
+      "5Y": "N/A%",
+      "All": "19.63%"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "llm",
+      "confidence": 82.86,
+      "extraction_time": 7.1336259841918945,
+      "timestamp": "2025-10-03T14:48:14.738588"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Emerging Equity Fund Mid Cap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Mid Cap",
+    "Type_of_Scheme": "Open-Ended Equity Scheme",
+    "Date_of_Allotment_(Inception_Date)": "09/09/2004",
+    "AUM_(as_of_Aug_2025)": "₹27,654.67 Crs",
+    "Fund_Manager_Name": "Mr. Harsha Upadhyaya",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "NIFTY Large Midcap 250 TRI",
+    "Options": "Growth, IDCW",
+    "Expense_Ratio": {
+      "Direct": "0.53%",
+      "Regular": "1.58%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "13.00%",
+      "Beta": "0.90",
+      "Sharpe_Ratio": "0.88"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "15.40",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "52.85",
+      "Mid_Cap_(%)": "40.25",
+      "Small_Cap_(%)": "5.58",
+      "Other_Assets_(%)": "1.32"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹332.1940",
+      "Regular_IDCW": "₹57.9550",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "1%",
+      "30_-_90_days": "N/A",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "VERY HIGH",
+    "CAGR": {
+      "1Y": "3.04%",
+      "3Y": "15.52%",
+      "5Y": "17.29%",
+      "All": "15.60%"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "llm",
+      "confidence": 82.86,
+      "extraction_time": 7.700093984603882,
+      "timestamp": "2025-10-03T14:48:14.738614"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Small Cap Fund Small Cap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Mid Cap",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "within the category. *For Fund Manager experience, please refer page 142-146 & 159-163. ## Risk rate assumed to be 5.54% (FBIL Overnight MIBOR rate as on 29th Aug 2025).**Total Expense Ratio includes applicable GST.",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "- Tier 1 Benchmark - Tier 2",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.37%",
+      "Regular": "1.40%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "15.11%",
+      "Beta": "0.89",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "69.16",
+      "Small_Cap_(%)": "14.66",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 37.14,
+      "extraction_time": 3.188776969909668,
+      "timestamp": "2025-10-03T14:48:14.738633"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak India EQ Contra Fund Contra Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "SMALL CAP",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "within the category. *For Fund Manager experience, please refer page 142-146 & 159-163. ## Risk rate assumed to be 5.54% (FBIL Overnight MIBOR rate as on 29th Aug 2025).**Total Expense Ratio includes applicable GST.",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "- Tier 1 Benchmark - Tier 2",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.52%",
+      "Regular": "1.64%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "16.59%",
+      "Beta": "0.80",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "15.19",
+      "Small_Cap_(%)": "76.68",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 37.14,
+      "extraction_time": 0.5139987468719482,
+      "timestamp": "2025-10-03T14:48:14.738648"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Focused Equity Fund Focused Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Large Cap",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "within the category. *For Fund Manager experience, please refer page 142-146 & 159-163. ## Risk rate",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "- Tier 1 Benchmark - Tier 2",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.57%",
+      "Regular": "1.86%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "13.59%",
+      "Beta": "0.99",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "17.42",
+      "Small_Cap_(%)": "32.02",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 37.14,
+      "extraction_time": 3.484961986541748,
+      "timestamp": "2025-10-03T14:48:14.738665"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Equity Arbitrage Fund Arbitrage Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Large Cap",
+    "Type_of_Scheme": "open-ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience, please refer page 142-146 & 159-163. **Total Expense Ratio includes applicable GST.",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Nifty Energy TRI",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.93%",
+      "Regular": "2.42%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "7.17%",
+      "Beta": "1.01",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "12.21",
+      "Small_Cap_(%)": "4.18",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "7.41 Years",
+      "Average_Maturity_Years": "19.29 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 41.67,
+      "extraction_time": 1.222661018371582,
+      "timestamp": "2025-10-03T14:48:14.738688"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Equity Hybrid Fund Aggressive Hybrid Fund",
+    "Asset_Class": "N/A",
+    "Sub_Class": "Large Cap",
+    "Type_of_Scheme": "Open Ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience, please refer page 142-146 & 159-163. For scheme performance Regular Plan, please refer page no 128-141. For scheme performance",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Nifty 500 TRI (65%) + HDFC Bank Ltd. 2.43 Ferrous Metals 0.65",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.44%",
+      "Regular": "1.73%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "9.34%",
+      "Beta": "0.99",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "13.03",
+      "Small_Cap_(%)": "12.85",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "6.85 Years",
+      "Average_Maturity_Years": "15.56 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 38.89,
+      "extraction_time": 0.39873480796813965,
+      "timestamp": "2025-10-03T14:48:14.738705"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Debt Hybrid Fund Conservative Hybrid Fund",
+    "Asset_Class": "Hybrid",
+    "Sub_Class": "LARGE CAP",
+    "Type_of_Scheme": "open-ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience, please refer page 142-146 & 159-163. Interest Rate Swaps as on 30 Nov 2024 is 1.47% of the net assets. *For Fund Manager experience, please refer page 142-146 & 159-163. ## Risk rate assumed to be 5.54% (FBIL Overnight MIBOR rate as on 31st July",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Nifty 50 Hybrid Infosys Ltd. 2.41 P I Industries Ltd 1.01",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.47%",
+      "Regular": "1.75%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "10.49%",
+      "Beta": "1.13",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "20.97",
+      "Small_Cap_(%)": "9.12",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "9.08 Years",
+      "Average_Maturity_Years": "23.69 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 41.67,
+      "extraction_time": 0.5323879718780518,
+      "timestamp": "2025-10-03T14:48:14.738717"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Overnight Fund Overnight Fund",
+    "Asset_Class": "Hybrid",
+    "Sub_Class": "Large Cap",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "Shibani Sircar",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "CRISIL Hybrid 85+15- Banks 5.17 6.90% Central Government SOV 5.51",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.48%",
+      "Regular": "1.66%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "5.66%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "4.23",
+      "Small_Cap_(%)": "2.25",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "8.21 Years",
+      "Average_Maturity_Years": "21.60 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 38.89,
+      "extraction_time": 0.43599414825439453,
+      "timestamp": "2025-10-03T14:48:14.738733"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Liquid Fund Liquid Fund",
+    "Asset_Class": "Hybrid",
+    "Sub_Class": "Gilt",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience,",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "L M ow o d t e o R ra is t k e Mod R e is r k ateM H o ig d h e r R a is te k ly Ris H k igh L M ow o d t e o R ra is t k e Mod R e is r k ateM H o ig d h e r R a is te k ly Ris H k igh",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "N/A",
+      "Regular": "N/A"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "N/A",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 20.0,
+      "extraction_time": 0.32892322540283203,
+      "timestamp": "2025-10-03T14:48:14.738748"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Savings Fund Ultra Short Duration Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "LIQUID",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience, please refer page 142-146 & 159-163. **Total Expense Ratio includes applicable GST. For scheme performance Regular Plan, please refer page no 128-141. For",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "NIFTY 1D Rate index",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.08%",
+      "Regular": "0.16%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "0.14%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "1.28 Years",
+      "Average_Maturity_Years": "1.28 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 33.33,
+      "extraction_time": 0.6305239200592041,
+      "timestamp": "2025-10-03T14:48:14.738767"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Money Market Fund Money Market Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "LIQUID",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "Deepak Agrawal",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Nifty Ultra Short Treasury Bills",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.37%",
+      "Regular": "0.83%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "0.36%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "0.44 Years",
+      "Average_Maturity_Years": "0.48 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 33.33,
+      "extraction_time": 0.41021013259887695,
+      "timestamp": "2025-10-03T14:48:14.738782"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Low Duration Fund Low Duration Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "N/A",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience, please refer page 142-146 & 159-163.**Total Expense Ratio includes applicable GST. For scheme performance Regular Plan, please",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "NIFTY 1 Year T-Bill Index Returns (%) 6.55 6.09 5.89 5.86 6.63 7.22",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.24%",
+      "Regular": "0.36%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "0.44%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "0.46 Years",
+      "Average_Maturity_Years": "0.47 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 30.56,
+      "extraction_time": 0.6167449951171875,
+      "timestamp": "2025-10-03T14:48:14.738795"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Corporate Bond Fund Corporate Bond Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "LIQUID",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "Deepak Agrawal",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Nifty Low Duration 7.46% Madhya Pradesh State DLF Cyber City Developers Ltd CRISIL AAA 0.73",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.42%",
+      "Regular": "1.18%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "0.62%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "0.90 Years",
+      "Average_Maturity_Years": "1.50 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 33.33,
+      "extraction_time": 0.44504499435424805,
+      "timestamp": "2025-10-03T14:48:14.738808"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Bond Short Term Fund Short Duration Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "CORPORATE BOND",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience, please refer page 142-146 & 159-163. **Total Expense Ratio includes applicable GST. For scheme performance Regular Plan, please",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "NIFTY 1 Year T-Bill Index Returns (%) 6.50 6.09 5.89 5.86 6.63 7.22",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.34%",
+      "Regular": "0.68%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "1.63%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "3.25 Years",
+      "Average_Maturity_Years": "5.10 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 33.33,
+      "extraction_time": 1.1560990810394287,
+      "timestamp": "2025-10-03T14:48:14.738832"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Floating Rate Fund Floater Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "N/A",
+    "Type_of_Scheme": "An open ended debt scheme predominantly investing in AA and below rated corporate bonds",
+    "Date_of_Allotment_(Inception_Date)": "11/05/2010",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "N/A",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "CRISIL Credit Risk Debt B-II Index",
+    "Options": "Regular Plan - Growth Option",
+    "Expense_Ratio": {
+      "Direct": "N/A",
+      "Regular": "N/A"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "N/A",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹10000",
+    "RisKometer_(Risk_Profile)": "HIGH",
+    "CAGR": {
+      "1Y": "8.22%",
+      "3Y": "7.68%",
+      "5Y": "6.41%",
+      "All": "6.99%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "N/A",
+      "Modified_Duration": "N/A",
+      "Average_Maturity_Years": "N/A",
+      "Macaulay_Duration": "N/A",
+      "Composition_by_rating": "AAA (52.63%)"
+    },
+    "_metadata": {
+      "extraction_method": "llm",
+      "confidence": 33.33,
+      "extraction_time": 5.126593112945557,
+      "timestamp": "2025-10-03T14:48:14.738853"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Medium Term Fund Medium Duration Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Medium Duration Fund",
+    "Type_of_Scheme": "Open ended dynamic debt scheme investing across duration.",
+    "Date_of_Allotment_(Inception_Date)": "26/05/2008",
+    "AUM_(as_of_Aug_2025)": "₹2,776.96 Crs",
+    "Fund_Manager_Name": "Mr. Deepak Agrawal, Mr. Abhishek Bisen",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Nifty Composite Debt Index A-III",
+    "Options": "Payout of IDCW, Reinvestment of IDCW",
+    "Expense_Ratio": {
+      "Direct": "0.59%",
+      "Regular": "1.33%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "3.90%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "₹37.0022",
+      "Regular_IDCW": "₹13.9404",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "NIL",
+      "30_-_90_days": "NIL",
+      "After_90_days": "NIL"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "₹100",
+    "RisKometer_(Risk_Profile)": "HIGH",
+    "CAGR": {
+      "1Y": "2.22%",
+      "3Y": "6.29%",
+      "5Y": "6.79%",
+      "All": "7.64%"
+    },
+    "Debt_Metrics": {
+      "Yield_to_Maturity": "7.39%",
+      "Modified_Duration": "8.07 Years",
+      "Average_Maturity_Years": "18.95 Years",
+      "Macaulay_Duration": "8.41 Years",
+      "Composition_by_rating": "AAA/Sovereign (82.31%)"
+    },
+    "_metadata": {
+      "extraction_method": "llm",
+      "confidence": 71.79,
+      "extraction_time": 8.753785133361816,
+      "timestamp": "2025-10-03T14:48:14.738878"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Banking and PSU Debt Fund Banking and PSU Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "Gilt",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience, please refer page 142-146 & 159-163. **Total Expense Ratio includes applicable GST. For scheme",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "CRISIL Medium 7.10% Central Government SOV 6.06",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.67%",
+      "Regular": "1.63%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "1.61%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "3.40 Years",
+      "Average_Maturity_Years": "5.40 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 33.33,
+      "extraction_time": 3.2110629081726074,
+      "timestamp": "2025-10-03T14:48:14.738896"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Gilt Fund Gilt Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "N/A",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "Deepak Agrawal",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "CRISIL Banking & CORPORATION LTD. CRISIL AAA 1.76",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.40%",
+      "Regular": "0.75%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "1.76%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "3.36 Years",
+      "Average_Maturity_Years": "5.63 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 30.56,
+      "extraction_time": 0.4013986587524414,
+      "timestamp": "2025-10-03T14:48:14.738920"
+    }
+  },
+  {
+    "Scheme_Name": "Kotak Bond Fund Medium to Long Duration Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "N/A",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience, please refer page 142-146 & 159-163. **Total",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Investors understand that their principal will be at moderate risk",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "N/A",
+      "Regular": "N/A"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "N/A",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 17.14,
+      "extraction_time": 0.3587031364440918,
+      "timestamp": "2025-10-03T14:48:14.738933"
+    }
+  },
+  {
+    "Scheme_Name": "Scheme Name SEBI Scheme Category Kotak Bluechip Fund Large Cap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Large Cap",
+    "Type_of_Scheme": "open-ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "An employee of the asset management company such as mutual fund or life insurer, who manages investments of the scheme. He is usually part of larger team of fund",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "A group of securities , usually a market index, whose performance is used as a standard or benchmark to measure investment performance of mutual funds, among other",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.61%",
+      "Regular": "1.74%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "12.13%",
+      "Beta": "0.93",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "9.00",
+      "Small_Cap_(%)": "4.88",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 37.14,
+      "extraction_time": 0.6075069904327393,
+      "timestamp": "2025-10-03T14:48:14.738948"
+    }
+  },
+  {
+    "Scheme_Name": "Large Cap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "LARGE CAP",
+    "Type_of_Scheme": "open-ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "within the category.",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "- Tier 1 Benchmark - Tier 2",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.61%",
+      "Regular": "1.74%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "12.13%",
+      "Beta": "0.93",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "17.44",
+      "Small_Cap_(%)": "4.98",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 37.14,
+      "extraction_time": 0.8909740447998047,
+      "timestamp": "2025-10-03T14:48:14.738966"
+    }
+  },
+  {
+    "Scheme_Name": "Large & Mid Cap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Mid Cap",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "within the category.",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "- Tier 1 Benchmark - Tier 2",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.53%",
+      "Regular": "1.58%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "13.00%",
+      "Beta": "0.90",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "40.25",
+      "Small_Cap_(%)": "5.58",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 37.14,
+      "extraction_time": 0.49866604804992676,
+      "timestamp": "2025-10-03T14:48:14.738997"
+    }
+  },
+  {
+    "Scheme_Name": "Mid Cap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Mid Cap",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "within the category. *For Fund Manager experience, please refer page 142-146 & 159-163. ## Risk rate assumed to be 5.54% (FBIL Overnight MIBOR rate as on 29th Aug 2025).**Total Expense Ratio includes applicable GST.",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "- Tier 1 Benchmark - Tier 2",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.37%",
+      "Regular": "1.40%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "15.11%",
+      "Beta": "0.89",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "15.19",
+      "Small_Cap_(%)": "76.68",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 37.14,
+      "extraction_time": 0.741631031036377,
+      "timestamp": "2025-10-03T14:48:14.739010"
+    }
+  },
+  {
+    "Scheme_Name": "Contra Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Large Cap",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "within the category. *For Fund Manager experience, please refer page 142-146 & 159-163. ## Risk rate",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "- Tier 1 Benchmark - Tier 2",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.57%",
+      "Regular": "1.86%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "13.59%",
+      "Beta": "0.99",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "28.57",
+      "Small_Cap_(%)": "14.87",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": "N/A (Equity Fund)",
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 37.14,
+      "extraction_time": 0.47365498542785645,
+      "timestamp": "2025-10-03T14:48:14.739029"
+    }
+  },
+  {
+    "Scheme_Name": "Focused Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Large Cap",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "within the category. *For Fund Manager experience, please refer page 142-146 & 159-163. ## Risk rate assumed to be 5.54% (FBIL Overnight MIBOR rate as on 29th Aug 2025).**Total Expense Ratio includes",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "- Tier 1 Benchmark - Tier 2",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.55%",
+      "Regular": "1.89%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "12.24%",
+      "Beta": "0.89",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "20.97",
+      "Small_Cap_(%)": "9.12",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "7.41 Years",
+      "Average_Maturity_Years": "19.29 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 41.67,
+      "extraction_time": 4.0537590980529785,
+      "timestamp": "2025-10-03T14:48:14.739045"
+    }
+  },
+  {
+    "Scheme_Name": "Debt Funds\nKotak Overnight Fund Overnight Fund",
+    "Asset_Class": "Hybrid",
+    "Sub_Class": "Large Cap",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience,",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "CRISIL Hybrid 85+15- Banks 5.17 6.90% Central Government SOV 5.51",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.48%",
+      "Regular": "1.66%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "5.66%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "4.23",
+      "Small_Cap_(%)": "2.25",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "8.21 Years",
+      "Average_Maturity_Years": "21.60 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 38.89,
+      "extraction_time": 3.8741228580474854,
+      "timestamp": "2025-10-03T14:48:14.739056"
+    }
+  },
+  {
+    "Scheme_Name": "Arbitrage Fund",
+    "Asset_Class": "N/A",
+    "Sub_Class": "Large Cap",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience, please refer page 142-146 & 159-163. ## Risk rate assumed to be 5.54% (FBIL Overnight MIBOR rate as on 29th Aug 2025).**Total Expense Ratio includes applicable GST. For last three IDCW, please refer",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Nifty 50 Arbitrage TRI HDFC Bank Ltd. Banks 4.11 -4.15",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.44%",
+      "Regular": "1.05%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "0.43%",
+      "Beta": "0.61",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "13.03",
+      "Small_Cap_(%)": "12.85",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "0.44 Years",
+      "Average_Maturity_Years": "0.44 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 38.89,
+      "extraction_time": 1.067133903503418,
+      "timestamp": "2025-10-03T14:48:14.739069"
+    }
+  },
+  {
+    "Scheme_Name": "Aggressive Hybrid Fund",
+    "Asset_Class": "Hybrid",
+    "Sub_Class": "LARGE CAP",
+    "Type_of_Scheme": "open-ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience, please refer page 142-146 & 159-163. Interest Rate Swaps as on 30 Nov 2024 is 1.47% of the net assets. *For Fund Manager experience, please refer page 142-146 & 159-163. ## Risk rate assumed to be 5.54% (FBIL Overnight MIBOR rate as on 31st July",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Nifty 50 Hybrid Infosys Ltd. 2.41 P I Industries Ltd 1.01",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.47%",
+      "Regular": "1.75%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "10.49%",
+      "Beta": "1.13",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "4.23",
+      "Small_Cap_(%)": "2.25",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "9.08 Years",
+      "Average_Maturity_Years": "23.69 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 41.67,
+      "extraction_time": 0.89931321144104,
+      "timestamp": "2025-10-03T14:48:14.739086"
+    }
+  },
+  {
+    "Scheme_Name": "ETF Funds\nKotak Overnight Fund Overnight Fund",
+    "Asset_Class": "Debt",
+    "Sub_Class": "LIQUID",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience, please refer page 142-146 & 159-163. **Total Expense Ratio includes applicable GST. For scheme performance Regular Plan, please refer page no 128-141. For",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "NIFTY 1D Rate index",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.08%",
+      "Regular": "0.16%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "0.14%",
+      "Beta": "N/A",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "N/A",
+      "Small_Cap_(%)": "N/A",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "1.28 Years",
+      "Average_Maturity_Years": "1.28 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 33.33,
+      "extraction_time": 2.7779159545898438,
+      "timestamp": "2025-10-03T14:48:14.739106"
+    }
+  },
+  {
+    "Scheme_Name": "Equity Funds\nKotak Bluechip Fund Large Cap Fund",
+    "Asset_Class": "Equity",
+    "Sub_Class": "Large Cap",
+    "Type_of_Scheme": "open-ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "An employee of the asset management company such as mutual fund or life insurer, who manages investments of the scheme. He is usually part of larger team of fund",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "A group of securities , usually a market index, whose performance is used as a standard or benchmark to measure investment performance of mutual funds, among other",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.61%",
+      "Regular": "1.74%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "12.13%",
+      "Beta": "0.93",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "13.03",
+      "Small_Cap_(%)": "12.85",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "7.41 Years",
+      "Average_Maturity_Years": "19.29 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 41.67,
+      "extraction_time": 5.954333305358887,
+      "timestamp": "2025-10-03T14:48:14.739111"
+    }
+  },
+  {
+    "Scheme_Name": "Debt Funds\nDebt Funds\nKotak Overnight Fund Overnight Fund",
+    "Asset_Class": "Hybrid",
+    "Sub_Class": "LARGE CAP",
+    "Type_of_Scheme": "open-ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "Atul Bhole",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "Nifty 50 Hybrid Infosys Ltd. 2.41 P I Industries Ltd 1.01",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.47%",
+      "Regular": "1.75%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "10.49%",
+      "Beta": "1.13",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "20.97",
+      "Small_Cap_(%)": "9.12",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "9.08 Years",
+      "Average_Maturity_Years": "23.69 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 41.67,
+      "extraction_time": 0.37063002586364746,
+      "timestamp": "2025-10-03T14:48:14.739114"
+    }
+  },
+  {
+    "Scheme_Name": "Index Funds Kotak Overnight Fund Overnight Fund",
+    "Asset_Class": "Hybrid",
+    "Sub_Class": "Large Cap",
+    "Type_of_Scheme": "open ended",
+    "Date_of_Allotment_(Inception_Date)": "N/A",
+    "AUM_(as_of_Aug_2025)": "N/A",
+    "Fund_Manager_Name": "experience, please refer page 142-146 & 159-163. Interest Rate Swaps as on 30 Nov 2024 is 1.47% of the net assets. *For Fund Manager experience, please refer page 142-146 & 159-163. ## Risk rate assumed to be 5.54% (FBIL Overnight MIBOR rate as on 31st July",
+    "Fund_Manager_Tenure": "N/A",
+    "Fund_Manager_Experience": "N/A",
+    "Benchmark": "w",
+    "Options": "Regular (IDCW, Growth)",
+    "Expense_Ratio": {
+      "Direct": "0.48%",
+      "Regular": "1.66%"
+    },
+    "Risk_Metrics": {
+      "Standard_Deviation": "5.66%",
+      "Beta": "1.13",
+      "Sharpe_Ratio": "N/A"
+    },
+    "Turnover": {
+      "Equity_Portfolio_Turnover": "N/A",
+      "Total_Turnover": "N/A"
+    },
+    "Portfolio_Allocation_by_Market_Cap": {
+      "Large_Cap_(%)": "N/A",
+      "Mid_Cap_(%)": "4.23",
+      "Small_Cap_(%)": "2.25",
+      "Other_Assets_(%)": "N/A"
+    },
+    "NAV_Value_as_of_Aug_31_2025": {
+      "Regular_Growth": "N/A",
+      "Regular_IDCW": "N/A",
+      "Regular_ITC": "N/A"
+    },
+    "Exit_Load": {
+      "Under_30_days": "N/A",
+      "30_-_90_days": "N/A",
+      "After_90_days": "N/A"
+    },
+    "Minimum_Monthly_SIP_investment_amount": "N/A",
+    "RisKometer_(Risk_Profile)": "N/A",
+    "CAGR": {
+      "1Y": "N/A",
+      "3Y": "N/A",
+      "5Y": "N/A",
+      "All": "N/A"
+    },
+    "Debt_Metrics": {
+      "Modified_Duration": "8.21 Years",
+      "Average_Maturity_Years": "21.60 Years"
+    },
+    "_metadata": {
+      "extraction_method": "rule_based",
+      "confidence": 41.67,
+      "extraction_time": 50.80392909049988,
+      "timestamp": "2025-10-03T14:48:14.739115"
+    }
+  }
+]
